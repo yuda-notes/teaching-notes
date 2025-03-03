@@ -116,5 +116,7 @@
 
    **Notes**:
 
-   - Tidak boleh menggunakan function `sum()`.
+   - Gunakan import package `math`.
    - Kerjakan di file script python (`.py`).
+
+4. 
