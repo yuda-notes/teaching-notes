@@ -33,10 +33,40 @@
     Total Pengeluaran: Rp65.000  
     Sisa Saldo: Rp35.000  
    ```
-
     **Notes**:
    - Tidak boleh menggunakan For/While loop dan If conditional.
    - Plus point jika dapat menerapkan `dictionary` untuk menyimpan informasi barang.
    - Kerjakan di file script python (`.py`).
   
-2. 
+2. Kamu adalah seorang guru dan ingin membuat program sederhana untuk menghitung nilai rata-rata siswa berdasarkan beberapa mata pelajaran. Program ini akan:
+
+    - Meminta jumlah mata pelajaran yang diikuti siswa.
+        - Optional: menerapkan validasi input 
+    - Meminta input nilai untuk setiap mata pelajaran.
+        - Optional: menerapkan validasi input
+    - Menghitung rata-rata nilai.
+    - Menentukan predikat berdasarkan nilai rata-rata:
+      ```
+        ≥ 90 → "Sangat Baik"
+        ≥ 80 → "Baik"
+        ≥ 70 → "Cukup"
+        < 70 → "Perlu Perbaikan"
+      ```
+    - Menampilkan hasil akhir.
+
+    Input:
+   ```
+    Masukkan jumlah mata pelajaran: 3  
+    Masukkan nilai mata pelajaran ke-1: 85  
+    Masukkan nilai mata pelajaran ke-2: 90  
+    Masukkan nilai mata pelajaran ke-3: 78  
+    ```
+
+   Output:
+   ```
+    Rata-rata nilai: 84.3  
+    Predikat: Baik
+   ```
+   **Notes**:
+   - Tidak boleh menggunakan function `sum()`.
+   - Kerjakan di file script python (`.py`).
