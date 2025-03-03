@@ -35,5 +35,8 @@
    ```
 
     **Notes**:
-   - Tidak boleh menggunakan For/While loop
-   - Kerjakan di file script python (`.py`)
+   - Tidak boleh menggunakan For/While loop dan If conditional.
+   - Plus point jika dapat menerapkan `dictionary` untuk menyimpan informasi barang.
+   - Kerjakan di file script python (`.py`).
+  
+2. 
