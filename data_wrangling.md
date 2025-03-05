@@ -11,10 +11,11 @@
     
       <img width="272" alt="image" src="https://github.com/user-attachments/assets/272f7428-1082-465d-9847-df27e287d878" />
 
-3. Tampilkan semua perjalanan yang memiliki durasi lebih dari rata-rata durasi perjalanan dalam dataset. Gunakan subquery untuk menghitung rata-rata durasi.
+3. Tampilkan semua perjalanan yang memiliki durasi perjalanan lebih dari rata-rata durasi perjalanan pada `subscriber_type` 'Local31'. Urutkan hasil tersebut berdasarkan duration terlama s/d tercepat. Gunakan subquery untuk menghitung rata-rata durasi.
     - Contoh output:
 
-      <img width="1371" alt="image" src="https://github.com/user-attachments/assets/9c2e310c-17f9-4e5e-a6d7-3c1d41192b70" />
+      <img width="1333" alt="image" src="https://github.com/user-attachments/assets/4ec81e3f-3d96-46bc-bb38-52ef069b3059" />
+
 
 4. Buat query yang mengkategorikan perjalanan berdasarkan durasi:
     - Jika `duration_minutes` kurang dari 5 menit, diberi label 'Short'
