@@ -17,9 +17,9 @@
       <img width="1371" alt="image" src="https://github.com/user-attachments/assets/9c2e310c-17f9-4e5e-a6d7-3c1d41192b70" />
 
 4. Buat query yang mengkategorikan perjalanan berdasarkan durasi:
-    - Jika duration_minutes kurang dari 5 menit, labeli sebagai 'Short'
-    - Jika duration_minutes antara 5 dan 30 menit, labeli sebagai 'Medium'
-    - Jika lebih dari 30 menit, labeli sebagai 'Long'
+    - Jika duration_minutes kurang dari 5 menit, diberi label 'Short'
+    - Jika duration_minutes antara 5 dan 30 menit, diberi label 'Medium'
+    - Jika lebih dari 30 menit, diberi label 'Long'
     - Hasilnya diberi alias `trip_category`.
     - Contoh output:
 
