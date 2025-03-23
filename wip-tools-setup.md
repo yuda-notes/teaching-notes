@@ -1,7 +1,11 @@
 # Tools Setup
 
 ## Table of Contents
+- [Conda](#conda)
 - [Git](#git)
+- [VSCode](#vscode)
+- [Terminal/CMD](#terminalcmd)
+- [GitHub](#github)
 
 ## Conda
 ### Check Version/`conda` Command
