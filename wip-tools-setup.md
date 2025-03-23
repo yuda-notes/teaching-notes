@@ -27,6 +27,40 @@
 Reference:
 - https://saturncloud.io/blog/solving-the-conda-command-not-recognized-issue-on-windows-10/
 
+### Manage Package
+- To install a package
+  ```shell
+  conda install package_name
+  ```
+  - or, using `pip` (make sure python is already installed)
+    ```shell
+    pip install package_name
+    ```
+- To remove a package
+  ```shell
+  conda remove package_name
+  ```
+- To see list of installed packages
+  ```shell
+  conda list
+  ```
+### Manage Environment
+- To create new environment
+  ```shell
+  conda create --name environment_name
+  ```
+- To activate an environment
+  ```shell
+  conda activate environment_name
+  ```
+- To deactivate an environment
+  ```shell
+  conda deactivate
+  ```
+
+Reference:
+- https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf
+
 ## Git
 ### Git Config
 1. Open Terminal/CMD
