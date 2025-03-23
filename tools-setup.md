@@ -1,14 +1,82 @@
 # Tools Setup
 
 ## Table of Contents
-- [Conda](#conda)
-- [Git](#git)
+- [Anaconda](#anaconda)
 - [VSCode](#vscode)
 - [Terminal/CMD](#terminalcmd)
+- [Git](#git)
 - [GitHub](#github)
 
-## Conda
-### Check Version/`conda` Command
+## Anaconda
+### Definition
+- Anaconda is an open-source distribution of Python and R programming languages, mainly suitable for Data Science projects.
+- Miniconda is a smaller version of Anaconda, both have same functionality and features.
+- **Conda** is a CLI app that enables user to manage packages and environments.
+- **Environment** is an isolated workspace that contains a specific collection of packages. ([reference](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/02-working-with-environments/index.html#what-is-a-conda-environment))
+  ![image](https://github.com/user-attachments/assets/17222b6b-68d2-4a8a-a940-cbbcc11bf8ad)
+
+### Conda Cheatsheet ([reference](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf))
+    ```bash
+     # verify conda installation or check version
+     conda --version
+   
+     # check current environment
+     conda info
+   
+     # Display list of environments. The active environment will be labeled with asterisk (*) symbol
+     conda info --envs
+   
+     # install package named "Pandas"
+     conda install pandas
+   
+     # install package with specific version
+     conda install selenium=1.2
+   
+     # remove/uninstall package
+     conda remove scipy
+   
+     # Display list of installed packages in current environment
+     conda list
+   
+     # create new environment named "Env1"
+     conda create --name Env1
+   
+     # create new environment with python and pandas package installed
+     conda create --name Env1 python pandas
+   
+     # delete specific environment
+     conda remove --name Env1 --all
+   
+     # activate specific environment
+     conda activate Env1
+   
+     # deactivate environment (base)
+     conda deactivate
+   
+     # update conda to the latest version (if available)
+     conda update conda
+    ```
+
+### Pip Cheatsheet ([reference](https://opensource.com/sites/default/files/gated-content/cheat_sheet_pip.pdf))
+
+- Just like `conda`, `pip` command is also can be used to manage packages within the environment.
+- To use `pip` command it is required to have python installed in the environment.
+
+```bash
+# install package with latest version
+pip install pandas
+
+# install package with specific version
+pip install pandas==2.0.0
+
+# remove/uninstall package
+pip uninstall scipy
+
+# Display list of installed packages in current environment
+pip list
+```
+
+### Troubleshoot `conda command not recognized` (**Windows only**) ([reference](https://saturncloud.io/blog/solving-the-conda-command-not-recognized-issue-on-windows-10/))
 1. Open Terminal/CMD
 2. Execute `conda --version`, it will display the version number.
 3. In Windows, if it displays "conda command not recognized", open the Start Menu and search for "Environment Variables".
@@ -24,55 +92,6 @@
 9. Click "OK" on all windows to save the changes.
 10. Close and reopen Terminal/CMD.
 
-Reference:
-- https://saturncloud.io/blog/solving-the-conda-command-not-recognized-issue-on-windows-10/
-
-### Manage Package
-- To install a package
-  ```shell
-  conda install package_name
-  ```
-  - or, using `pip` (make sure python is already installed)
-    ```shell
-    pip install package_name
-    ```
-- To remove a package
-  ```shell
-  conda remove package_name
-  ```
-- To see list of installed packages
-  ```shell
-  conda list
-  ```
-### Manage Environment
-- To create new environment
-  ```shell
-  conda create --name environment_name
-  ```
-- To activate an environment
-  ```shell
-  conda activate environment_name
-  ```
-- To deactivate an environment
-  ```shell
-  conda deactivate
-  ```
-
-Reference:
-- https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf
-
-## Git
-### Git Config
-1. Open Terminal/CMD
-2. Execute the following command line by line:
-   ```shell
-   git config --global user.name "John Doe"
-   git config --global user.email "johndoe@example.com"
-   ```
-
-Reference:
-- https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
-
 ## VSCode
 ### Select Default Profile (**Windows only**)
 1. Press `CTRL + SHIFT + P` to open the Command Palette
@@ -85,6 +104,23 @@ Reference:
 Reference:
 - https://www.shanebart.com/set-default-vscode-terminal/
 
+### Python Quickstart
+- There are 2 file extensions that can be used to run python
+   - Script file: `.py`
+     - To run a script file, execute the following command in the Terminal
+       ```shell
+       python filename.py
+       ```
+       > **Notes**
+       > - Make sure to have Conda installed and is using `base` environment.
+       > - Make sure that the file exist within the current directory.
+   - Notebook file: `.ipynb`
+     - Notebook is a special extension that can be used to create a report, analysis, or summary using python.
+     - Notebook consist of 2 cells component, **markdown/text** and **code**.
+     - Markdown/Text cell is used to add narration, explanation, or insight. It is also can be used to give heading for separating each section of the content.
+     - Code cell is used to execute a python script within the file.
+     - To run a code inside the notebook, we can use the **Run All** button or **Execute** button in each code cell.
+
 ## Terminal/CMD
 ### Shell Commands
 - For Windows, learn more about some useful commands [here](https://www.ninjaone.com/blog/windows-cmd-commands/)
@@ -93,6 +129,18 @@ Reference:
 ### Keyboard Shortcuts
 - For Windows, learn more about some useful shortcuts [here](https://www.howtogeek.com/254401/34-useful-keyboard-shortcuts-for-the-windows-command-prompt/)
 - For Mac/Linux, learn more [here](https://www.idownloadblog.com/2020/03/10/mac-keyboard-shortcuts-terminal/) or [here](https://itsfoss.com/linux-terminal-shortcuts/)
+
+## Git
+### Git Config
+1. Open Terminal/CMD
+2. Execute the following command line by line:
+   ```shell
+   git config --global user.name "John Doe"
+   git config --global user.email "johndoe@example.com"
+   ```
+
+Reference:
+- https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 
 ## GitHub
 ### Create Empty Repository
