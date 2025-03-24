@@ -12,6 +12,7 @@
 - **Anaconda** is an open-source distribution of Python and R programming languages, mainly suitable for Data Science projects.
 - Miniconda is a smaller version of Anaconda, both have same functionality and features.
 - **Conda** is a CLI app that enables user to manage packages and environments.
+- Conda can be accessed with **Anaconda Prompt** or with built-in **Terminal** (MacOS/Linux) and **CMD** (Windows)
 - **Environment** is an isolated workspace that contains a specific collection of packages. ([reference](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/02-working-with-environments/index.html#what-is-a-conda-environment))
   ![image](https://github.com/user-attachments/assets/17222b6b-68d2-4a8a-a940-cbbcc11bf8ad)
 
