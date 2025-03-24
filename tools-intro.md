@@ -1,4 +1,4 @@
-# Tools Setup
+# Tools Introduction
 
 ## Table of Contents
 - [Anaconda](#anaconda)
