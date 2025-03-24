@@ -248,8 +248,8 @@ git
    <img src="https://github.com/user-attachments/assets/c35a21a6-1573-413b-9583-21902fadec4d" alt="drawing" width="500">
 7. You can clone this repository as usual.
 
-### What's Next
+### Learn More About Git
 - Beginner's Guide to Git [here](https://github.blog/developer-skills/programming-languages-and-frameworks/what-is-git-our-beginners-guide-to-version-control/)
-- Learn more about basic git [here](https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/)
-- Learn more about git branch [here](https://www.geeksforgeeks.org/introduction-to-git-branch/)
+- Basic Git Command [here](https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/)
+- Introduction to Git Branch [here](https://www.geeksforgeeks.org/introduction-to-git-branch/)
 - Learn more about Git Workflow [here](https://dev.to/ajmal_hasan/beginner-friendly-git-workflow-for-developers-2g3g)
