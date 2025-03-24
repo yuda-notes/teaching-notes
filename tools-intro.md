@@ -254,3 +254,8 @@ git
 - Basic Git Command [here](https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/)
 - Introduction to Git Branch [here](https://www.geeksforgeeks.org/introduction-to-git-branch/)
 - Learn more about Git Workflow [here](https://dev.to/ajmal_hasan/beginner-friendly-git-workflow-for-developers-2g3g)
+
+## Videos to Watch
+- [What is Anaconda](https://youtu.be/iaNEQglCF-I?feature=shared)
+- [What is Git](https://youtu.be/2ReR1YJrNOM?feature=shared)
+- [How Git Works](https://youtu.be/e9lnsKot_SQ?feature=shared)
