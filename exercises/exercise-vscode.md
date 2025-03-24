@@ -1,10 +1,10 @@
 # Exercise VSCode
 
-1. Launch VS Code and then open folder that you have previously built on "Exercise Bash" session
+1. Launch VSCode and open previous folder from the **Exercise Terminal** session
 2. Add 2 files inside the folder:
    - 1 **script** file: `[your_name]_script.py`
    - 1 **notebook** file: `[your_name]_notebook.ipynb`
-3. Copy/paste the script below to your **script** file and save.
+3. Copy/paste the code below to your **script** file and save it.
    ```py
    print("Hello, [your_name]!")
    ```
