@@ -9,7 +9,7 @@
     - selain menu diatas, maka program akan menampilkan output "menu tidak dikenal!"
 
 **notes: gunakan 2 code dibawah ini untuk melengkapi statement di menu 1 atau 2**
-```
+```py
 # Menu 1
 # membuat deret fibonacci
 n = 10
@@ -28,7 +28,7 @@ while count <= n:
 
 print(result)
 ```
-```
+```py
 # Menu 2
 # menentukan tanggal ganjil/genap (berdasarkan hari ini)
 import datetime 
