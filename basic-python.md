@@ -5,6 +5,15 @@
 - **Comments** in Python are the lines in the code that are ignored by the interpreter during the execution of the program.
 - Comments enhance the readability of the code, it can be used to identify and explain functionality of the code.
 
+  ```py
+  # ini komentar
+  
+  '''
+  ini juga komentar
+  '''
+  ```
+
+
 ## Data Type ([reference](https://www.w3schools.com/python/python_datatypes.asp))
 - `string`: for Word, Sentence, or Character(s)
   ```py
