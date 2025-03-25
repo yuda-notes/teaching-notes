@@ -104,7 +104,7 @@
   - Assignment `=`
   - Arithmetic `+ - * / % ** //`
   - Comparison `== != < <= > >=`
-  - Logical `and or`
+  - Logical `and or not`
 - If operator combined with a value or a variable it is called an **expression**
  
 ### List manipulation
