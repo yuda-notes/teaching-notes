@@ -15,6 +15,10 @@
 - **Computational Logic** is a term that describes the **decision-making** process used in programming and writing algorithms.  <br>
 ![image](https://github.com/user-attachments/assets/fd5b7953-e72b-4bb6-ab8b-6e67df5705db)
 
+### Logic Gate ([reference](https://www.datacamp.com/tutorial/python-logical-operators-introduction))
+- In programming, we frequently need to make decisions based on condition. In the case of multiple conditions, we might want to execute a certain action only if several conditions are met simultaneously or we might want to trigger an alternative action if any one of several conditions is fulfilled. <br>
+![image](https://github.com/user-attachments/assets/aa85be80-4c64-4faa-a166-4e0fe8de61dd)
+
 ## Flowchart
 - **Flowchart** is a diagram that depicts a process, system, or algorithm.
 - Flowchart symbol <br>
