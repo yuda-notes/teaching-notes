@@ -52,3 +52,26 @@ else:
 ```
 
 ## Loops
+- **Loops** in Python are used to execute certain blocks of code repeatedly.
+
+### While Loop
+- It is used to execute a block of statements repeatedly until a given condition is satisfied.
+```py
+count = 0
+while (count < 3):        # this is the condition
+    count = count + 1     # this block statement will be executed if the condition is still True
+    print("Hello World!")
+```
+
+#### `else` statement
+- `else` clause is only executed when our while condition becomes False.
+```py
+count = 0
+while (count < 3):               # this is the condition
+    count = count + 1            # this block statement will be executed if the condition is still True
+    print("Hello World!")
+else:
+    print("Finished, see you!")  # this block statement will be executed if the condition is False
+```
+
+### For Loop
