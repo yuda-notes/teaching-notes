@@ -23,14 +23,14 @@ Hasil Pembagian: 2.0
 Buatlah program yang meminta pengguna memasukkan nama lengkap, lalu:  
 1. Mengubah semua huruf menjadi huruf besar  
 2. Mengubah semua huruf menjadi huruf kecil  
-3. Menampilkan hanya inisial pertama dari setiap kata (contoh: "John Doe" → "J.D.")  
+3. Menampilkan hanya inisial pertama dari setiap kata (contoh: "John Doe" → "JD")  
 
 ### **Contoh Input & Output:**  
 ```
 Masukkan nama lengkap: John Doe  
 Huruf Besar: JOHN DOE  
 Huruf Kecil: john doe  
-Inisial: J.D.  
+Inisial: JD  
 ```
 
 ---
