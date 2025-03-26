@@ -67,6 +67,7 @@ while (count < 3):        # this is the condition
 ```
 
 #### Infinite Loop
+<img src="https://github.com/user-attachments/assets/4f54f8ff-a588-401e-90a3-538c23130adb" width="500"> <br>
 - While loop can be used to create an infinite loop which is a loop that never ends. This is because the condition is always be True.
 ```py
 count = 0
