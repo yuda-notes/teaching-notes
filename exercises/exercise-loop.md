@@ -27,7 +27,7 @@
         # gunakan code berikut untuk melengkapi proses di menu 2
         currentDate = 1 # ganti dengan tanggal hari ini
         
-        if currentDate.day % 2 == 0:
+        if currentDate % 2 == 0:
             print("tanggal genap")
         else:
             print("tanggal ganjil")
