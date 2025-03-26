@@ -54,6 +54,17 @@ def fun():
     ```
 - Variable-Length arguments (`*args` and `**kwargs`)
   - By default, each argument can only store single value. In Variable-Length arguments, we can define a single argument that can store multiple values by using special symbol (`*` and `**`)
+    ```py
+    def fun(*arg1):
+      pass
+
+    fun(1, 2, 3, 4, 5) # these values will be collected as tuple
+
+    def fun(**arg1):
+      pass
+
+    fun(A=1, B=2, C=3, D=4, E=5) # these values will be collected as dictionary
+    ```
  
 ## Anonymous Function
 - **Anonymous function** is a function without a name.
@@ -69,3 +80,16 @@ def fun():
 ## Module/Package
 - **Module** is the equivalent of script file.
 - **Package** is the equivalent of folder, it consists of many modules.
+```py
+# import module
+import module_name
+
+# import module inside a package
+import package_name.module_name
+
+# import module using `from`
+from module_name import var_name, func_name
+
+# import module inside a package using `from`
+from package_name.module_name import var_name, func_name
+```
