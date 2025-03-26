@@ -30,14 +30,42 @@ def fun():
 ### Types of Arguments
 - Default argument
   - Default argument is a parameter that assumes a default value.
+    ```py
+    def fun(arg1=10):
+      pass
+
+    fun(5) # if given a value, this value will replace the default value
+    ```
 - Keyword arguments (named arguments)
   - The idea is to allow the caller to specify the argument name with values so that the caller does not need to remember the order of parameters.
+    ```py
+    def fun(arg1):
+      pass
+
+    fun(arg1=5) # this will give context that `5` will be stored in `arg1` no matter the position.
+    ```
 - Positional arguments
-  - We used the Position argument during the function call so that the first value for first argument, second value for second argument, and so on. 
+  - We used the Position argument during the function call so that the first value for first argument, second value for second argument, and so on.
+    ```py
+    def fun(arg1, arg2):
+      pass
+
+    fun(10, 4) # `10` will be stored in `arg1` and 4 will be in `arg2`
+    ```
 - Variable-Length arguments (`*args` and `**kwargs`)
   - By default, each argument can only store single value. In Variable-Length arguments, we can define a single argument that can store multiple values by using special symbol (`*` and `**`)
  
 ## Anonymous Function
 - **Anonymous function** is a function without a name.
 - Using `lambda` keyword to create anonymous function.
-- 
+  ```py
+  # since anonymous function doesn't have a name, in order to be called, a lambda must be stored inside a variable.
+  result = lambda x1, x2: x1/x2
+
+  # calling lambda function
+  result(10,2) # output: 5
+  ```
+
+## Module/Package
+- **Module** is the equivalent of script file.
+- **Package** is the equivalent of folder, it consists of many modules.
