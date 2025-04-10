@@ -11,4 +11,4 @@ OrderID |	CustomerName	| CustomerAddress |	Items Purchased |	TotalPrice |
 Notes:
 - Setiap order bisa memiliki lebih dari satu item.
 - Customer dengan nama yang sama bisa muncul lebih dari sekali.
-- Dalam melakukan normalisasi, bisa gunakan `excel` atau `spreadsheet` agar dapat "visualisasi" nya
+- Dapat menggunakan `excel` atau `spreadsheet` untuk memudahkan proses Normalisasi.
