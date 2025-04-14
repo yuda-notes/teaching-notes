@@ -1,5 +1,13 @@
 # Web Scraping
 
+## Table of Content
+- [HTML](#html)
+- [Selenium](#selenium)
+- [BeautifulSoup](#beautifulsoup)
+- [More Example](#more-examples)
+  - [Extract Data from Specific Element](#extract-data-from-specific-element)
+  - [Extract Data from Specific Element with Specific Attribute](#extract-data-from-specific-element-with-specific-attributes)
+  - [Extract Data from Multiple Pages](#extract-data-from-multiple-pages)
 ## Definition
 - Web Scraping is a process of extracting data from website.
 - To extract data from website, we must know how to identify HTML components.
@@ -10,7 +18,7 @@
   pip install bs4 selenium
   ```
 
-## HMTL
+## HTML
 - HTML is the standard markup language for creating Web pages.
 - HTML consists of a series of elements that tell the browser how to display the content.
 - An HTML element is defined by a start tag, some content, and an end tag.
