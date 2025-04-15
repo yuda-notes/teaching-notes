@@ -18,12 +18,12 @@
   <img src="https://github.com/user-attachments/assets/9f3ad44b-1d25-4bc5-9712-52947fc1632e">
 
 ## Setup
-- To create an API with python, we must install this package
+- To create an API with python, we must install **FastAPI** package. ([reference](https://fastapi.tiangolo.com/))
   ```bash
   pip install "fastapi[standard]"
   ```
 
-## Simple API
+## Sample API
 ```py
 # import package
 from fastapi import FastAPI
