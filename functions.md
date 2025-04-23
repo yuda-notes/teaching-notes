@@ -15,62 +15,69 @@
 # create a function
 def fun():
     print("Hello World")
+
+# calling a function
+fun() # output "Hello World"
 ```
 
-- After creating a function in Python we can call it by using the name of the functions.
-  ```py
-  # calling a function
-  fun() # output "Hello World"
-  ```
-
 ## Parameters/Arguments
-- Parameters/Arguments are the values passed inside the parenthesis of the function.
+- Parameters/Arguments are the values passed inside the parenthesis `()` of the function.
 - A function can have any number of arguments separated by a comma.
 
 ### Types of Arguments
-- Default argument
-  - Default argument is a parameter that assumes a default value.
-    ```py
-    def fun(arg1=10):
-      pass
-
-    fun(5) # if given a value, this value will replace the default value
-    ```
-- Keyword arguments (named arguments)
-  - The idea is to allow the caller to specify the argument name with values so that the caller does not need to remember the order of parameters.
-    ```py
-    def fun(arg1):
-      pass
-
-    fun(arg1=5) # this will give context that `5` will be stored in `arg1` no matter the position.
-    ```
 - Positional arguments
-  - We used the Position argument during the function call so that the first value for first argument, second value for second argument, and so on.
+  - By default, we must pass values into a function by considering their argument position
     ```py
     def fun(arg1, arg2):
       pass
 
-    fun(10, 4) # `10` will be stored in `arg1` and 4 will be in `arg2`
+    # based on argument position, `arg1` = 10, `arg2` = 4
+    fun(10, 4)
     ```
-- Variable-Length arguments (`*args` and `**kwargs`)
-  - By default, each argument can only store single value. In Variable-Length arguments, we can define a single argument that can store multiple values by using special symbol (`*` and `**`)
+- Default argument
+  - Argument can also have a default value
     ```py
+    def fun(arg1=10):
+      pass
+
+    # if given a value, this will replace the default value
+    fun(5)
+    ```
+- Keyword arguments (named arguments)
+  - We can pass value(s) to a function without considering their position, just by calling the argument name.
+    ```py
+    def fun(arg1, arg2):
+      pass
+
+    '''
+    `arg1` will have 5 and `arg2` will have 10
+    '''
+    fun(arg2=10, arg1=5) 
+    ```
+- Variable-Length argument (`*args` and `**kwargs`)
+  - By default, each argument can only store single value. 
+  - In Variable-Length, an argument can store multiple values by using special symbol (`*` and `**`).
+    ```py
+    # *args argument
     def fun(*arg1):
       pass
 
-    fun(1, 2, 3, 4, 5) # these values will be collected as tuple
+    # these values will be collected as tuple
+    fun(1, 2, 3, 4, 5) 
 
+    # **kwargs argument
     def fun(**arg1):
       pass
 
-    fun(A=1, B=2, C=3, D=4, E=5) # these values will be collected as dictionary
+    # these values will be collected as dictionary
+    fun(A=1, B=2, C=3, D=4, E=5)
     ```
  
 ## Anonymous Function
-- **Anonymous function** is a function without a name.
+- We can define a function without a name, hence the name is **Anonymous**.
 - Using `lambda` keyword to create anonymous function.
   ```py
-  # since anonymous function doesn't have a name, in order to be called, a lambda must be stored inside a variable.
+  # a lambda function must be stored inside a variable.
   result = lambda x1, x2: x1/x2
 
   # calling lambda function
@@ -78,8 +85,8 @@ def fun():
   ```
 
 ## Module/Package
-- **Module** is the equivalent of script file.
-- **Package** is the equivalent of folder, it consists of many modules.
+- **Module** is the equivalent of script file `.py`.
+- **Package** is the equivalent of folder/directory that consist of many modules.
 ```py
 # import module
 import module_name
