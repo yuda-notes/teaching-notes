@@ -1,11 +1,21 @@
 # Tools Introduction
 
 ## Table of Contents
+- [Terminal/CMD](#terminalcmd)
 - [Anaconda](#anaconda)
 - [VSCode](#vscode)
-- [Terminal/CMD](#terminalcmd)
 - [Git](#git)
 - [GitHub](#github)
+- [Videos to Watch](#videos-to-watch)
+
+## Terminal/CMD
+### Shell Commands
+- For Windows, learn more about some useful commands [here](https://www.ninjaone.com/blog/windows-cmd-commands/)
+- For Mac/Linux, learn more [here](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/) or [here](https://www.digitalocean.com/community/tutorials/linux-commands#top-50-linux-commands-you-must-know-as-a-regular-user)
+
+### Keyboard Shortcuts
+- For Windows, learn more about some useful shortcuts [here](https://www.howtogeek.com/254401/34-useful-keyboard-shortcuts-for-the-windows-command-prompt/)
+- For Mac/Linux, learn more [here](https://www.idownloadblog.com/2020/03/10/mac-keyboard-shortcuts-terminal/) or [here](https://itsfoss.com/linux-terminal-shortcuts/)
 
 ## Anaconda
 ### Definition
@@ -79,8 +89,8 @@ pip list
 
 ### Troubleshoot `conda command not recognized` (**Windows only**) ([reference](https://saturncloud.io/blog/solving-the-conda-command-not-recognized-issue-on-windows-10/))
 1. Open Terminal/CMD
-2. Execute `conda --version`, it will display the version number.
-3. In Windows, if it displays "conda command not recognized", open the Start Menu and search for "Environment Variables".
+2. Execute `conda --version`, it should display the version number.
+3. If it displays `conda command not recognized`, open the Start Menu and search for "Environment Variables".
 4. Click on "Edit the system environment variables".
 5. In the System Properties window, click on "Environment Variables". <br>
    ![image](https://github.com/user-attachments/assets/93a65a8b-c5a4-4b1d-ba50-0a460462ac8d)
@@ -88,8 +98,8 @@ pip list
    ![image](https://github.com/user-attachments/assets/f0d1d61a-58ef-4d99-be3a-1d7f5b3ed04d)
 7. In the Edit Environment Variable window, click on "New". <br>
    ![image](https://github.com/user-attachments/assets/142cdbda-b908-4bd8-9659-b33afb77c8e2)
-8. Add the path to the directory where Conda is installed. This is typically in `C:\Users\YourUsername\Anaconda3\Scripts`.
-   - Just to make sure, open Anaconda Prompt and execute `where conda` command. It will give you the same output pattern like above.
+8. Add the path to the directory where Anaconda/Miniconda is installed, usually in `C:\Users\YourUsername\Anaconda3\Scripts`.
+   - You can verify this by opening Anaconda Prompt and execute `where conda` command. It will give you the same output like above.
 9. Click "OK" on all windows to save the changes.
 10. Close and reopen Terminal/CMD.
 
@@ -121,16 +131,9 @@ pip list
     
 ### `readme.md` File
 - **readme.md** file contains information to understand what the project is about.
-- This file is written using Markdown syntax. ([reference](https://commonmark.org/help/))
-
-## Terminal/CMD
-### Shell Commands
-- For Windows, learn more about some useful commands [here](https://www.ninjaone.com/blog/windows-cmd-commands/)
-- For Mac/Linux, learn more [here](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/) or [here](https://www.digitalocean.com/community/tutorials/linux-commands#top-50-linux-commands-you-must-know-as-a-regular-user)
-
-### Keyboard Shortcuts
-- For Windows, learn more about some useful shortcuts [here](https://www.howtogeek.com/254401/34-useful-keyboard-shortcuts-for-the-windows-command-prompt/)
-- For Mac/Linux, learn more [here](https://www.idownloadblog.com/2020/03/10/mac-keyboard-shortcuts-terminal/) or [here](https://itsfoss.com/linux-terminal-shortcuts/)
+- This file is written using Markdown syntax. You check out these references to get familiarized with it:
+   - [Basic Writing and Formatting - GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+   - [CommonMark](https://commonmark.org/help/)
 
 ## Git
 ### Definition
