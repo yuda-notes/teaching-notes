@@ -1,4 +1,4 @@
-# Tools Introduction
+# Environment Setup
 
 ## Table of Contents
 - [Terminal/CMD](#terminalcmd)
