@@ -85,7 +85,7 @@
   # output: "This is a Student class"
   ```
 
-## Accessing the attributes and methods from `Student` Object
+## Accessing the Attributes and Methods From `Student` Object
 
 ```py
 # create an object and save it to a variable
@@ -95,9 +95,10 @@ stu = Student(
     )
 
 print(stu.student_name) # output: Michael
-print(stu.student_name) # output: Michael
+print(stu.student_address) # output: Los Angeles
 
-
+stu.sayHello() # output: Hi, my name is Michael 
+```
 
 ## OOP Characteristics
 
@@ -109,5 +110,44 @@ print(stu.student_name) # output: Michael
 
 ### Inheritance
 
+- Inheritance is a concept in OOP that allows Class to inherit its attributes and methods from other Class.
+- Just like inheritance in real-life, in OOP there are also a parent Class and child Class, where child will inherit their parents attribute and also their methods.
+
+```py
+# parent class
+class Foo:
+  '''
+  Foo class is a parent class, this means that all attributes and methods 
+  from this class will be inherited to its child.
+  '''
+  def __init__(self):
+    self.name = "John Doe"
+  
+  def hello(self):
+    print("hello world")
+
+# child class
+class Bar(Foo):
+  '''
+  Bar class is a child of Foo, this means that in this class will have all of
+  its parent's attributes and methods.
+  '''
+  pass
+
+# create Bar object
+barObj = Bar()
+
+# access attributes from child
+print(barObj.name) # output: John Doe
+
+# access method from child
+barObj.hello() # output: hello world
+```
+
+### Types of Inheritance
+
+![](https://miro.medium.com/v2/resize:fit:1089/0*utVulhXRC5VWsSq5.jpg)
+
 ## Reference
-- https://www.geeksforgeeks.org/python-oops-concepts/
+
+- <https://www.geeksforgeeks.org/python-oops-concepts/>
