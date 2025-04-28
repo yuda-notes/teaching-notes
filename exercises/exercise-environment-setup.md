@@ -1,4 +1,4 @@
-# Tools Introduction - Exercise
+# Environment Setup - Exercise
 
 ## Create New Conda Environment
 
