@@ -103,10 +103,36 @@ stu.sayHello() # output: Hi, my name is Michael
 ## OOP Characteristics
 
 - There are many characteristics that are assosciated with OOP.
-  - Inheritance
   - Encapsulation
-  - Abstraction
+  - Inheritance
   - Polymorphism
+
+### Encapsulation
+
+- It's a process of encapsulate attribute/methods into single unit called Class.
+- In encapsulation, attributes/methods can be divided into 3 categories
+  - Public -> can be accessed everywhere.
+  - Protected* -> can only be accessed within the Class itself and its child, has prefix `_`.
+  - Private* -> can only be accessed within the Class itself, has prefix `__`.
+  > \*However, python does not support Protected and Private attributes. But by convention, it is followed by most python developers.
+
+  > **Note**: All members in a Python class are public by default.
+
+- Example
+
+```py
+# parent
+class Foo:
+    def __init__(self, name):
+        self.name = name
+
+        # example of private attributes
+        self.__private = "private value"
+    
+    # example of private methods
+    def __fun(self):
+        print("Private method", self.__private)
+```
 
 ### Inheritance
 
@@ -144,9 +170,17 @@ print(barObj.name) # output: John Doe
 barObj.hello() # output: hello world
 ```
 
-### Types of Inheritance
+#### Types of Inheritance
 
 ![](https://miro.medium.com/v2/resize:fit:1089/0*utVulhXRC5VWsSq5.jpg)
+
+### Polymorphism
+
+- Polymorphism is the ability of class to override and overload.
+- Overriding is the ability of a child class to create same method as its parent, but with different implementation.
+- Overloading is the ability of a class to create same method multiple times, but with different parameter(s).
+
+  > **Note**: Python can only do overriding in Polymorphism.
 
 ## Reference
 
