@@ -1,14 +1,16 @@
 # Functions
 
 ## Definition ([reference](https://www.geeksforgeeks.org/python-functions/))
+
 - Function is a set of instruction that does specific job
 - Benefits of Using Functions
-  - **Readability** 
+  - **Readability**
   - **Reusability**
 
 ![image](https://github.com/user-attachments/assets/bed4b959-5474-4788-8594-3dd2d0d100d2)
 
 ## Create Function
+
 ![image](https://github.com/user-attachments/assets/539ff73f-49d8-4481-ba67-50ec055597d5)
 
 ```py
@@ -21,12 +23,15 @@ fun() # output "Hello World"
 ```
 
 ## Parameters/Arguments
+
 - Parameters/Arguments are the values passed inside the parenthesis `()` of the function.
 - A function can have any number of arguments separated by a comma.
 
 ### Types of Arguments
+
 - Positional arguments
   - By default, we must pass values into a function by considering their argument position
+
     ```py
     def fun(arg1, arg2):
       pass
@@ -34,8 +39,10 @@ fun() # output "Hello World"
     # based on argument position, `arg1` = 10, `arg2` = 4
     fun(10, 4)
     ```
+
 - Default argument
   - Argument can also have a default value
+
     ```py
     def fun(arg1=10):
       pass
@@ -43,8 +50,10 @@ fun() # output "Hello World"
     # if given a value, this will replace the default value
     fun(5)
     ```
+
 - Keyword arguments (named arguments)
   - We can pass value(s) to a function without considering their position, just by calling the argument name.
+
     ```py
     def fun(arg1, arg2):
       pass
@@ -54,9 +63,11 @@ fun() # output "Hello World"
     '''
     fun(arg2=10, arg1=5) 
     ```
+
 - Variable-Length argument (`*args` and `**kwargs`)
-  - By default, each argument can only store single value. 
+  - By default, each argument can only store single value.
   - In Variable-Length, an argument can store multiple values by using special symbol (`*` and `**`).
+
     ```py
     # *args argument
     def fun(*arg1):
@@ -72,10 +83,12 @@ fun() # output "Hello World"
     # these values will be collected as dictionary
     fun(A=1, B=2, C=3, D=4, E=5)
     ```
- 
+
 ## Anonymous Function
+
 - We can define a function without a name, hence the name is **Anonymous**.
 - Using `lambda` keyword to create anonymous function.
+
   ```py
   # a lambda function must be stored inside a variable.
   result = lambda x1, x2: x1/x2
@@ -85,8 +98,10 @@ fun() # output "Hello World"
   ```
 
 ## Module/Package
+
 - **Module** is the equivalent of script file `.py`.
-- **Package** is the equivalent of folder/directory that consist of many modules.
+- **Package** is the equivalent of folder/directory.
+
 ```py
 # import module
 import module_name
