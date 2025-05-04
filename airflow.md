@@ -25,6 +25,18 @@
     - For a list of all core operators, [see here](https://airflow.apache.org/docs/apache-airflow/2.3.0/operators-and-hooks-ref.html)
   - [Sensors](https://airflow.apache.org/docs/apache-airflow/2.3.0/concepts/sensors.html), a special type of Operator that are designed to do exactly one thing - wait for something to occur.
   - [TaskFlow](https://airflow.apache.org/docs/apache-airflow/2.3.0/concepts/taskflow.html), is an API that consist of `@task` decorator to create a clean DAG without extra boilerplate.
+ 
+### DAG Scheduling
+- DAG object has an attribute called `schedule_interval` that is used to create a scheduling mechanism for trigerring the DAG.
+- This scheduling is defined by using [cron expression](https://en.wikipedia.org/wiki/Cron#CRON_expression) in `string` format, `datetime.timedelta` object, and these built-in presets:
+    - `None` -> disable scheduling
+    - `@once` -> Schedule once and only once
+    - `@hourly` -> Run once an hour at the beginning of the hour (01:00, 02:00, and so on)
+    - `@daily` -> Run once a day at midnight (every day at 00:00)
+    - `@weekly` -> Run once a week at midnight on Sunday morning (every Sunday at 00:00)
+    - `@monthly` -> Run once a month at midnight of the first day of the month
+    - `@yearly` -> Run once a year at midnight of January 1st
+- Learn more about cron expression, you can check out [crontab.guru](https://crontab.guru/)
 
 ## Setup
 
