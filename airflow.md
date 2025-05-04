@@ -103,3 +103,8 @@ with DAG(
     # define flow
     welcome_msg >> data_cleaning >> convert_to_json >> done
 ```
+
+### Other Examples
+- [Airflow - Example DAGs](https://airflow.apache.org/docs/apache-airflow/2.2.2/_modules/airflow/example_dags/tutorial.html)
+- [ML Pipeline](https://github.com/ardhiraka/DEBlitz/tree/master/MLPipeline)
+- [ETL Pipeline with BigQuery](https://github.com/AbdulazizAmen/ETL-Pipeline-with-Airflow-and-BigQuery)
