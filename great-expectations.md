@@ -13,7 +13,7 @@
 
 ## Great Expectations
 
-- Great Expectations (GX) is a specific python package to perform data validation.
+- Great Expectations (GX) is a specific python package to perform data validation pipeline.
 - To install GX
 
   ```bash
