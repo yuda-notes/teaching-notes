@@ -1,0 +1,23 @@
+[2025-05-04T06:25:18.746+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: csv_to_json.convert_to_json manual__2025-05-04T06:25:13.546368+00:00 [queued]>
+[2025-05-04T06:25:18.752+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: csv_to_json.convert_to_json manual__2025-05-04T06:25:13.546368+00:00 [queued]>
+[2025-05-04T06:25:18.752+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-04T06:25:18.752+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2025-05-04T06:25:18.752+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-04T06:25:18.759+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): convert_to_json> on 2025-05-04 06:25:13.546368+00:00
+[2025-05-04T06:25:18.764+0000] {standard_task_runner.py:52} INFO - Started process 288 to run task
+[2025-05-04T06:25:18.767+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'csv_to_json', 'convert_to_json', 'manual__2025-05-04T06:25:13.546368+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_json.py', '--cfg-path', '/tmp/tmpbmt_qlwz', '--error-file', '/tmp/tmpkd2kwr4z']
+[2025-05-04T06:25:18.768+0000] {standard_task_runner.py:80} INFO - Job 16: Subtask convert_to_json
+[2025-05-04T06:25:18.815+0000] {task_command.py:371} INFO - Running <TaskInstance: csv_to_json.convert_to_json manual__2025-05-04T06:25:13.546368+00:00 [running]> on host d314c6c904e1
+[2025-05-04T06:25:18.901+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=csv_to_json
+AIRFLOW_CTX_TASK_ID=convert_to_json
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-04T06:25:13.546368+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-04T06:25:13.546368+00:00
+[2025-05-04T06:25:18.957+0000] {python.py:173} INFO - Done. Returned value was: None
+[2025-05-04T06:25:19.051+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=csv_to_json, task_id=convert_to_json, execution_date=20250504T062513, start_date=20250504T062518, end_date=20250504T062519
+[2025-05-04T06:25:19.160+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-05-04T06:25:19.312+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check

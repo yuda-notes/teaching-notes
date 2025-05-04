@@ -1,0 +1,23 @@
+[2025-05-04T06:24:14.777+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: csv_to_json.data_cleaning manual__2025-05-04T06:24:12.386128+00:00 [queued]>
+[2025-05-04T06:24:14.784+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: csv_to_json.data_cleaning manual__2025-05-04T06:24:12.386128+00:00 [queued]>
+[2025-05-04T06:24:14.785+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-04T06:24:14.785+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2025-05-04T06:24:14.785+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-04T06:24:14.796+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): data_cleaning> on 2025-05-04 06:24:12.386128+00:00
+[2025-05-04T06:24:14.806+0000] {standard_task_runner.py:52} INFO - Started process 257 to run task
+[2025-05-04T06:24:14.809+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'csv_to_json', 'data_cleaning', 'manual__2025-05-04T06:24:12.386128+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_json.py', '--cfg-path', '/tmp/tmpx_1e4s09', '--error-file', '/tmp/tmp0ne3ew4q']
+[2025-05-04T06:24:14.810+0000] {standard_task_runner.py:80} INFO - Job 12: Subtask data_cleaning
+[2025-05-04T06:24:14.851+0000] {task_command.py:371} INFO - Running <TaskInstance: csv_to_json.data_cleaning manual__2025-05-04T06:24:12.386128+00:00 [running]> on host d314c6c904e1
+[2025-05-04T06:24:14.896+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=csv_to_json
+AIRFLOW_CTX_TASK_ID=data_cleaning
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-04T06:24:12.386128+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-04T06:24:12.386128+00:00
+[2025-05-04T06:24:14.915+0000] {python.py:173} INFO - Done. Returned value was: None
+[2025-05-04T06:24:14.921+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=csv_to_json, task_id=data_cleaning, execution_date=20250504T062412, start_date=20250504T062414, end_date=20250504T062414
+[2025-05-04T06:24:14.948+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-05-04T06:24:14.972+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check
