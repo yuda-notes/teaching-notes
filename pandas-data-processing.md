@@ -38,6 +38,7 @@
 
 ### Handling
 <img src="https://github.com/user-attachments/assets/a3d61918-8719-43f5-9104-a4a8704ab733" width=500 />
+
 - Delete rows/columns -> If the missing values are minimal and won't significantly impact the analysis, you can choose to delete rows or columns with missing values.
 - Imputation -> When missing values are few and not too influential, imputing missing values using methods like mean, median, mode, or regression-based imputation can be suitable.
 - Other specialized techniques -> Traditional imputation methods may not be suitable for MNAR data, and specialized techniques that consider the reasons for missingness are required.
