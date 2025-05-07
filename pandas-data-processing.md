@@ -11,7 +11,7 @@
   - Analysis
   - Data Visualization
   - And many more.
-- Some common case for that involves data processing are:
+- Some common case that involves data processing are:
   - Handle missing values
   - Handle duplicate values
   - Handle data inconcistencies 
