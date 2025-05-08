@@ -1,4 +1,4 @@
-# Pandas - Exercise
+# Data Analysis with Pandas - Exercise
 
 ## Dataset
 You'll be working with a dataset of 1,000 trending YouTube videos:
