@@ -3,7 +3,7 @@
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*hHVINI5TGJB6jPKN.jpg)
 
 ## Definition
-- Pandas is a library that provides data manipulation and analysis with specific data structure.
+- Pandas is a library that supports data manipulation and analysis with specific data structure.
 - There are 2 data structures in Pandas
   - DataFrame -> same like `table` in SQL, which consist of rows and columns
   - Series -> just a single column in DataFrame
