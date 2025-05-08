@@ -11,7 +11,7 @@
   - `category`: Kategori video  
   - `published`: Tahun publikasi  
 
----
+> Kerjakan di notebook `.ipynb`
 
 ## 1. Data Loading
 - Baca file CSV dari URL [berikut](https://raw.githubusercontent.com/yuda-notes/teaching-notes/refs/heads/main/dataset/trending-youtube-videos.csv) ke dalam DataFrame
