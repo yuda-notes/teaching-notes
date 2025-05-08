@@ -1,36 +1,40 @@
-# 📝 Pandas - Exercise 
+# Pandas Data Analysis Exercise
 
-## 📄 Setup
-- Dataset [ini](https://raw.githubusercontent.com/yuda-notes/teaching-notes/refs/heads/main/dataset/trending-youtube-videos.csv) berisi informasi tentang 1000 video trending di YouTube. 
-- Data sudah dibersihkan, sehingga kamu tidak perlu menangani missing values atau mengubah tipe data.
-- Kolom-kolom yang tersedia meliputi:
-  - `video`: Judul video  
-  - `video_views`: Jumlah penayangan  
-  - `likes`: Jumlah suka  
-  - `dislikes`: Jumlah tidak suka  
-  - `category`: Kategori video  
-  - `published`: Tahun publikasi  
+## Dataset
+You'll be working with a dataset of 1,000 trending YouTube videos:
+- **Dataset URL**: [trending-youtube-videos.csv](https://raw.githubusercontent.com/yuda-notes/teaching-notes/refs/heads/main/dataset/trending-youtube-videos.csv)
+- **Columns**:
+  - `video`: Video title
+  - `video_views`: Number of views
+  - `likes`: Number of likes
+  - `dislikes`: Number of dislikes
+  - `category`: Video category
+  - `published`: Year published
 
-> Kerjakan di notebook `.ipynb`
+## Tasks
 
-## 1. Data Loading
-- Baca file CSV dari URL [berikut](https://raw.githubusercontent.com/yuda-notes/teaching-notes/refs/heads/main/dataset/trending-youtube-videos.csv) ke dalam DataFrame
+### 1. Data Loading
+- Load the dataset from the provided URL into a Pandas DataFrame
 
-## 2. Data Exploration
-- Tampilkan 5 baris pertama dari data.
-- Tampilkan informasi umum dari data dengan `.info()`.
-- Tampilkan ringkasan statistik dari kolom numerik dengan `.describe()`.
+### 2. Data Exploration
+- Display the first 5 rows of the dataset
+- Show the dataset information (columns, data types, non-null counts)
+- Display basic statistics for numerical columns
 
-## 3. Data Manipulation
-- Ambil 10 data pertama untuk kategori “Music”.
-- Hapus semua baris dengan kategori “Gaming”.
-- Ambil semua data dari video yang dipublikasikan sebelum tahun 2021.
-- Tambahkan kolom baru bernama `label` yang isinya berupa string gabungan antara `video` dan `category` (contoh: `Funny Cats - Comedy`).
+### 3. Data Manipulation
+1. Extract the first 10 videos in the "Music" category
+2. Remove all rows where category is "Gaming"
+3. Filter the dataset to only include videos published before 2021
+4. Create a new column called `label` that combines the `video` title and `category` in the format: "[video title] - [category]"
 
-## 4. Data Aggregation and Grouping
-- Hitung jumlah video untuk setiap kategori (`category`).
-- Tampilkan kategori dengan jumlah video terbanyak.
-- Hitung rata-rata `views` berdasarkan tahun publikasi.
+### 4. Data Aggregation
+1. Calculate how many videos exist in each category
+2. Determine which category has the most videos
+3. Compute the average number of views grouped by publication year
 
-## 🚀 Bonus - Optional
-- Simpan DataFrame hasil akhir ke file baru bernama `processed_trending_videos.csv`.
+### Bonus - Optional
+- Save your final processed DataFrame to a new CSV file named `processed_trending_videos.csv`
+
+---
+
+**Note**: Perform all tasks in a Jupyter Notebook and show your results.
