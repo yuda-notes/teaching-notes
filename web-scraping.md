@@ -4,10 +4,11 @@
 - [HTML](#html)
 - [Selenium](#selenium)
 - [BeautifulSoup](#beautifulsoup)
-- [More Example](#more-examples)
+- [Examples](#examples)
   - [Extract Data from Specific Element](#extract-data-from-specific-element)
   - [Extract Data from Specific Element with Specific Attribute](#extract-data-from-specific-element-with-specific-attributes)
   - [Extract Data from Multiple Pages](#extract-data-from-multiple-pages)
+
 ## Definition
 - Web Scraping is a process of extracting data from website.
 - To extract data from website, we must know how to identify HTML components.
@@ -28,11 +29,12 @@
 - Additionally, all HTML elements can have attributes which provide additional information about the elements.
 - Attributes are always specified in the start tag in key-value format, e.g. `"name": "john doe"`.
   ```html
-  <!-- this is an example of `a` element who has `href` attribute to specifies a link/URL to another page/website -->
+  <!-- this is an example of `a` element that has `href` attribute to specify a link/URL to another page/website -->
   <a href="https://www.w3schools.com">Visit W3Schools</a>
   ```
 
 ## Selenium
+- Selenium is a browser automation tool mainly used for testing web applications.
 - Only compatible with: **Chrome**, **Safari**, **Firefox**, and **Edge**
 - Initialize browser instance
   ```py
@@ -51,24 +53,20 @@
   # for Edge
   driver = webdriver.Edge()
   ```
-- For **Safari**, you must enable Remote Automation feature before start using Selenium.
-  1. Go to Safari > Settings.
-  2. Select `Advanced` tab.
-  3. Enable "Show features for web developers" option.
-  4. Select `Developer` tab.
-  5. Enable "Allow remote automation" option.
-  6. Done.
+- For **Safari**, you must enable Remote Automation feature.
+  1. Open Safari settings > go to **Advanced** tab
+      <img width="948" alt="web-scraping-1" src="https://github.com/user-attachments/assets/0c6a75f8-201a-4dda-8391-4ca5d2229ad1" /><br />
+  2. Enable **Show features for web developers** option
+      <img width="948" alt="web-scraping-2" src="https://github.com/user-attachments/assets/c9e4362b-d346-4031-9ab4-8a8018cb4aa8" /><br />
+  3. Go to **Developer** tab and enable **Allow remote automation** option
+      <img width="948" alt="web-scraping-3" src="https://github.com/user-attachments/assets/4f919525-c672-4c16-8ce7-cbe7a9142751" /><br />
 - _Optionally_, if you need to specify webdriver for selenium, you can download the driver for each browser
   - [Chrome - ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/#stable)
   - [Firefox - GeckoDriver](https://github.com/mozilla/geckodriver/releases)
   - [Edge - MSEdge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH#downloads)
-  - After downloading and extracting the driver, you can do the initiaton process like this
-    ```py
-    driver = webdriver.Chrome("path/to/your/driver")
-    ```
   
 ## BeautifulSoup
-- BeautifulSoup is a Python library for pulling data out of HTML and XML files.
+- BeautifulSoup is a Python library for extracting data from website page.
 - Example of scraping process using BeautifulSoup and Selenium.
   ```py
   # import packages
@@ -91,15 +89,14 @@
   # print
   print(soup.prettify())
   ```
-- In `BeautifulSoup` object, there are 2 methods that we can use to help us extracting data, `find()` and `find_all()`.
-  - `find()` is used to find one element.
-    > If the elements have many occurences, then it will only get the first occurence.
-  - `find_all()` is used to find elements in many occurences.
+- In `BeautifulSoup` object, there are 2 methods that we can use for extracting data.
+  - `find()` -> to extract one element from the page.
+    > If the elements have many occurrences, then it will only get the first occurrence.
+  - `find_all()` -> to extract many elements from the page.
 
-## More Examples
+## Examples
 ### Extract Data from Specific Element
-<img width="1440" alt="image" src="https://github.com/user-attachments/assets/f25ddb28-6584-49f2-83e3-adbcc13a6856" />
-
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/f25ddb28-6584-49f2-83e3-adbcc13a6856" /><br />
 ```py
 # import packages
 from bs4 import BeautifulSoup
@@ -129,19 +126,18 @@ print("using find_all(): ", results)
 driver.close()
 ```
 - Output
-
-  <img width="400" alt="image" src="https://github.com/user-attachments/assets/650a7a94-d698-433f-a284-52ac96901bca" />
-
+  <img width="400" alt="image" src="https://github.com/user-attachments/assets/650a7a94-d698-433f-a284-52ac96901bca" /><br />
   > As we can see, `find()` will always return 1 element/object, while `find_all()` will always return a list of objects.
 
 #### Extract Text/Content from Element
 - To extract the content of the element, we can use `get_text()` method.
-- But before we can call `get_text()` we must ensure that our element is exists by checking if `element != None` is `True`
-- Additionally we can add `strip()` method after extracting content with `get_text()`. This is to trim whitespaces from the text/content
+- But before we can call `get_text()`, we must ensure that our element exists by checking if `element != None` is `True`
+- Additionally we can add `strip()` method after extracting content with `get_text()`. This is to trim whitespaces from the text/content.
   ```py
-  # extracting content and strip whitespaces
+  # extracting content
   element.get_text().strip()
   ```
+
 ### Extract Data from Specific Element with Specific Attribute(s)
 ```py
 # import packages
