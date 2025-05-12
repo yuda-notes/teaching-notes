@@ -8,7 +8,7 @@
   - [Extract Data from Specific Element](#extract-data-from-specific-element)
   - [Extract Data from Specific Element with Specific Attribute](#extract-data-from-specific-element-with-specific-attributes)
   - [Extract Data from Multiple Pages](#extract-data-from-multiple-pages)
-  - [Create DataFrame from Scarping Data](#create-dataframe-from-scraping-data)
+  - [Create DataFrame from Scraping Data](#create-dataframe-from-scraping-data)
 
 ## Definition
 - Web Scraping is a process of extracting data from website.
