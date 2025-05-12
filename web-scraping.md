@@ -213,6 +213,13 @@ for number in range(1, 6):
         # add `None` to the list
         names.append(None)
 
+# show all results
+print(names)
+
 # optional, to force close the browser instance
 driver.close()
 ```
+- Output:
+  ```
+  ['Detroit Red Wings', 'Edmonton Oilers', 'Hartford Whalers', ..., 'Colorado Avalanche']
+  ```
