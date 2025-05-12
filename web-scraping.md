@@ -34,13 +34,6 @@
 
 ## Selenium
 - Only compatible with: **Chrome**, **Safari**, **Firefox**, and **Edge**
-- For **Safari**, you must enable Remote Automation feature before start using Selenium.
-  1. Go to Safari > Settings.
-  2. Select `Advanced` tab.
-  3. Enable "Show features for web developers" option.
-  4. Select `Developer` tab.
-  5. Enable "Allow remote automation" option.
-  6. Done.
 - Initialize browser instance
   ```py
   # import package
@@ -58,6 +51,13 @@
   # for Edge
   driver = webdriver.Edge()
   ```
+- For **Safari**, you must enable Remote Automation feature before start using Selenium.
+  1. Go to Safari > Settings.
+  2. Select `Advanced` tab.
+  3. Enable "Show features for web developers" option.
+  4. Select `Developer` tab.
+  5. Enable "Allow remote automation" option.
+  6. Done.
 - _Optionally_, if you need to specify webdriver for selenium, you can download the driver for each browser
   - [Chrome - ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/#stable)
   - [Firefox - GeckoDriver](https://github.com/mozilla/geckodriver/releases)
