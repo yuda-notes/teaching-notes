@@ -8,6 +8,7 @@
   - [Extract Data from Specific Element](#extract-data-from-specific-element)
   - [Extract Data from Specific Element with Specific Attribute](#extract-data-from-specific-element-with-specific-attributes)
   - [Extract Data from Multiple Pages](#extract-data-from-multiple-pages)
+  - [Create DataFrame from Scarping Data](#create-dataframe-from-scraping-data)
 
 ## Definition
 - Web Scraping is a process of extracting data from website.
@@ -223,3 +224,177 @@ driver.close()
   ```
   ['Detroit Red Wings', 'Edmonton Oilers', 'Hartford Whalers', ..., 'Colorado Avalanche']
   ```
+
+### Create DataFrame from Scraping Data
+```py
+# import packages
+from bs4 import BeautifulSoup
+from selenium import webdriver
+import pandas as pd
+
+# initiate browser instance
+driver = webdriver.Chrome()
+
+# define some lists to store values for each columns in DataFrame
+resNames = []
+resYears = []
+resWins = []
+resLosses = []
+
+# we can use loop mechanism to automate multiple page scraping
+# for example, we are using this to loop through page 1 to 5 in our website
+for number in range(1, 6):
+    # open website URL with specific page number
+    url = "https://www.scrapethissite.com/pages/forms/?page_num=" + str(number)
+    driver.get(url)
+
+    # extract HTML data from page
+    html = driver.page_source
+
+    # parse HTML data to `BeautifulSoup` object
+    soup = BeautifulSoup(html, "html.parser")
+
+    # find elements of `tr` that have "class=team"
+    results = soup.find_all("tr", {"class": "team"})
+
+    for el in results:
+        nameEl = el.find("td", {"class": "name"})
+        yearEl = el.find("td", {"class": "year"})
+        winsEl = el.find("td", {"class": "wins"})
+        lossesEl = el.find("td", {"class": "losses"})
+
+        # check each element if exists
+        if nameEl != None:
+            # extract the content
+            resNames.append(nameEl.get_text().strip())
+        else:
+            # add `None` to the list
+            resNames.append(None)
+
+        if yearEl != None:
+            resYears.append(yearEl.get_text().strip())
+        else:
+            resYears.append(None)
+
+        if winsEl != None:
+            resWins.append(winsEl.get_text().strip())
+        else:
+            resWins.append(None)
+
+        if lossesEl != None:
+            resLosses.append(lossesEl.get_text().strip())
+        else:
+            resLosses.append(None)
+
+# create empty DataFrame
+df = pd.DataFrame()
+
+# populate columns for DataFrame
+df['name'] = resNames
+df['year'] = resYears
+df['win'] = resWins
+df['loss'] = resLosses
+
+# show DataFrame
+display(df)
+
+# optional, to force close the browser instance
+driver.close()
+```
+- Output:
+  <div>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>name</th>
+          <th>year</th>
+          <th>win</th>
+          <th>loss</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>0</th>
+          <td>Boston Bruins</td>
+          <td>1990</td>
+          <td>44</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>Buffalo Sabres</td>
+          <td>1990</td>
+          <td>31</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Calgary Flames</td>
+          <td>1990</td>
+          <td>46</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Chicago Blackhawks</td>
+          <td>1990</td>
+          <td>49</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>Detroit Red Wings</td>
+          <td>1990</td>
+          <td>34</td>
+          <td>38</td>
+        </tr>
+        <tr>
+          <th>...</th>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th>79</th>
+          <td>Boston Bruins</td>
+          <td>1995</td>
+          <td>40</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <th>80</th>
+          <td>Buffalo Sabres</td>
+          <td>1995</td>
+          <td>33</td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <th>81</th>
+          <td>Calgary Flames</td>
+          <td>1995</td>
+          <td>34</td>
+          <td>37</td>
+        </tr>
+        <tr>
+          <th>82</th>
+          <td>Chicago Blackhawks</td>
+          <td>1995</td>
+          <td>40</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <th>83</th>
+          <td>Colorado Avalanche</td>
+          <td>1995</td>
+          <td>47</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>84 rows × 4 columns</p>
+  </div>
+## Pro Tip
+- In some cases, we can use `sleep()` method from `time` package to wait for the page finished loading.
+- We can add `time.sleep()` after `driver.get(url)` or before extracting HTML elements from the page.
