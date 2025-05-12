@@ -127,7 +127,30 @@ print("using find_all(): ", results)
 driver.close()
 ```
 - Output
-  <img width="400" alt="image" src="https://github.com/user-attachments/assets/650a7a94-d698-433f-a284-52ac96901bca" /><br />
+  ```
+  using find():
+    <td class="name">
+        Boston Bruins
+    </td>
+  using find_all():  [
+    <td class="name">
+        Boston Bruins
+    </td>,
+    <td class="year">
+        1990
+    </td>,
+    <td class="wins">
+        44
+    </td>,
+    ...,
+    <td class="ga">
+        236
+    </td>,
+    <td class="diff text-success">
+        21
+    </td>
+  ]
+  ```
   > As we can see, `find()` will always return 1 element/object, while `find_all()` will always return a list of objects.
 
 #### Extract Text/Content from Element
@@ -166,8 +189,24 @@ print("using find_all(): ", results)
 driver.close()
 ```
 - Output
-
-  <img width="556" alt="image" src="https://github.com/user-attachments/assets/14997689-2df6-4698-a7f9-f12da7d3fb82" />
+  ```
+  using find_all():
+  [
+    <td class="name">
+        Boston Bruins
+    </td>,
+    <td class="name">
+        Buffalo Sabres
+    </td>,
+    <td class="name">
+        Calgary Flames
+    </td>,
+    ...,
+    <td class="name">
+        Chicago Blackhawks
+    </td>
+  ]
+  ```
 
 ### Extract Data from Multiple Pages
 - To extract data from multiple pages, first we need to understand how our browsers work when we are navigating to other pages.
