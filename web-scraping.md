@@ -258,6 +258,7 @@ for number in range(1, 6):
     results = soup.find_all("tr", {"class": "team"})
 
     for el in results:
+        # inside of each `tr` element, we can find other elements inside it as well.
         nameEl = el.find("td", {"class": "name"})
         yearEl = el.find("td", {"class": "year"})
         winsEl = el.find("td", {"class": "wins"})
