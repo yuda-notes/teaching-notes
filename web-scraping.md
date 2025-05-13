@@ -214,7 +214,7 @@ driver.close()
 - To extract data from multiple pages, first we need to understand how our browsers work when we are navigating to other pages.
 - In some cases, when we click specific page number usually it will redirect to that page.
   <img width="1309" alt="Screenshot 2025-04-14 at 11 56 40" src="https://github.com/user-attachments/assets/b6a9bbb5-2a1a-4245-9a42-dd3e408c8336" />
-- And if we look again in the URL bar, we notice some changes our URL.
+- And if we look again in the URL bar, we notice some changes in the URL.
   <img width="1440" alt="Screenshot 2025-04-14 at 11 59 16" src="https://github.com/user-attachments/assets/eca2e228-13c2-4bc8-bd2a-1e25017f59e4" />
 - The additional `page_num=2` in our URL indicate that we are now in the 2nd page. So, if we want to go to another page, we just need to increment/decrement the value.
 ```py
