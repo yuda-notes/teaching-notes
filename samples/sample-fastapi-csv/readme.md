@@ -12,3 +12,6 @@ fastapi dev
 # or
 fastapi dev main.py
 ```
+
+## Deployment
+- For the deployed version, check out [this](https://github.com/yudantoanas/sample-fastapi-csv) repository
