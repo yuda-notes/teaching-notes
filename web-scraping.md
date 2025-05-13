@@ -129,10 +129,12 @@ driver.close()
 - Output
   ```
   using find():
-    <td class="name">
-        Boston Bruins
-    </td>
-  using find_all():  [
+  <td class="name">
+      Boston Bruins
+  </td>
+  
+  using find_all():
+  [
     <td class="name">
         Boston Bruins
     </td>,
