@@ -46,75 +46,114 @@ def getMain():
 
 ## More Samples
 ### API with CSV as Data Source
+Link to dataset: https://raw.githubusercontent.com/yuda-notes/teaching-notes/refs/heads/main/samples/sample-fastapi-csv/dataset.csv
 ```py
-# import package
-from fastapi import FastAPI, HTTPException, Header
+from fastapi import FastAPI, HTTPException
 import pandas as pd
+from pydantic import BaseModel
+from datetime import datetime
 
-# define password for api-key auth
-password = "secret123"
+
+class Profile(BaseModel):
+    '''
+    Profile model is used for creating request body
+    '''
+    name: str
+    age: int
+    location: str
 
 # create FastAPI object
 app = FastAPI()
 
-# create default endpoint
+
 @app.get("/")
-def getData(): # every endpoint must be followed with handler function
-    """
-    Every function must have return value in the form of JSON or Dictionary format
-    """
+async def getWelcome():
     return {
-        "message": "hello world !!!"
+        "msg": "Sample FastAPI CSV"
     }
 
-# create another enpoint
-# endpoint for showing all data from csv
+
 @app.get("/data")
-def getCsv():
-    # 1. read csv using pandas
-    df = pd.read_csv('data.csv')
+async def getAllData():
+    df = pd.read_csv("dataset.csv")
 
-    # 2. returns the DataFrame as dictionary
-    return df.to_dict(orient="records")
+    return {
+        "data": df.to_dict(orient="records")
+    }
 
-# endpoint for showing specific data from csv using path-parameter
-@app.get("/data/{name}") # path-params is defined inside the URL denoted with `{}`
-def getDataByName(name: str): # function must also have the same parameter as the URL
-    # 1. read csv
-    df = pd.read_csv('data.csv')
 
-    # 2. filter data by name
-    result = df[df['name'] == name]
+@app.get("/data/{location}")
+async def getDataByLocation(location: str):
+    df = pd.read_csv("dataset.csv")
 
-    # 3. validate filter result
-    if len(result) > 0:
-        # 4. returns response
-        return result.to_dict(orient="records")
-    else:
-        # 5. returns error when its not valid
-        raise HTTPException(status_code=404, detail="data " + name + " tidak ditemukan")
+    df = df[df.location == location]
 
-# endpoint for deleting data with api-key authentication method
-@app.delete("/data/{name}")
-def deleteDataByName(name: str, api_key: str = Header(None)): # the api-key is located in the header
-    # check api-key
-    if api_key != None and api_key == password:
-        # 1. read csv
-        df = pd.read_csv('data.csv')
+    # validate filter data
+    if len(df) > 0:
+        return {
+            "data": df.to_dict(orient="records")
+        }
 
-        # 2. to delete, exclude the input name
-        result = df[~(df['name'] == name)]
+    raise HTTPException(status_code=404, detail="Data not found")
 
-        # 3. replace existing csv
-        result.to_csv('data.csv', index=False)
 
-        # 4. returns response
-        return {"message": "data berhasil ditambahkan"}
-    else:
-        # 5. returns error when api-key invalid
-        raise HTTPException(status_code=403, detail="password salah!")
-```
+@app.patch("/data/{id}")
+async def updateProfile(id: int, profile: Profile):
+    df = pd.read_csv("dataset.csv")
 
-### API with Database Connection
-```py
+    filter = df[df.id == id]
+    # check data existence
+    if len(filter) == 0:
+        raise HTTPException(status_code=404, detail="Data not found")
+
+    # if exists, update specific row using .loc[]
+    df.loc[df.id == id, ['name', 'age', 'location']] = [
+        profile.name, profile.age, profile.location]
+
+    df.sort_values(by=['id'], ignore_index=True, inplace=True)
+    df.to_csv('dataset.csv', index=False)
+
+    return {
+        "msg": "Data has been updated"
+    }
+
+
+@app.post("/data")
+async def createProfile(profile: Profile):
+    df = pd.read_csv("dataset.csv")
+
+    newData = pd.DataFrame()
+    newData['id'] = df.tail(1)['id'] + 1
+    newData['name'] = profile.name
+    newData['age'] = profile.age
+    newData['location'] = profile.location
+    newData['created_at'] = datetime.now().date()
+
+    df = pd.concat([df, newData], ignore_index=True)
+
+    df.sort_values(by=['id'], ignore_index=True, inplace=True)
+    df.to_csv('dataset.csv', index=False)
+
+    return {
+        "data": df.tail(1).to_dict(orient='records')
+    }
+
+
+@app.delete('/data/{id}')
+async def deleteProfile(id: int):
+    df = pd.read_csv("dataset.csv")
+
+    # check data existence
+    filter = df[df.id == id]
+    if len(filter) == 0:
+        raise HTTPException(status_code=404, detail="Data not found")
+
+    # if exists, delete it
+    df = df[df.id != id]
+    df.sort_values(by=['id'], ignore_index=True, inplace=True)
+    df.to_csv('dataset.csv', index=False)
+
+    return {
+        "msg": "Data has been deleted"
+    }
 ```
