@@ -89,4 +89,5 @@ Create a heatmap that compares likes and dislikes by category using color intens
 **Notes**
 
 - Work on **Notebook** or **Colab**
+- You can choose `matplotlib`, `seaborn`, or `plotly`
 - Report to the instructor if finished!
