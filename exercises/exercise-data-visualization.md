@@ -70,9 +70,9 @@ Sample Preview:
 
 Create a bar chart showing the number of videos in each category. This helps understand which category appears most frequently in trending content.
 
-## 2. Likes vs. Dislikes Comparison
+## 2. Likes vs. Views Comparison
 
-Create a scatter plot to show the relationship between the number of likes and dislikes. Each dot represents a video. What kind of trend or correlation can you observe?
+Create a scatter plot to show the relationship between the number of likes and views. Each dot represents a video. What kind of trend or correlation can you observe?
 
 ## 3. Average Views per Category
 
