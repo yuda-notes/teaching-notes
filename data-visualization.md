@@ -24,5 +24,5 @@ Sample notebook - [here](https://github.com/yuda-notes/teaching-notes/blob/main/
 
 ## References
 - [Data Viz Catalogue](https://datavizcatalogue.com/) - find chart inspiration based on needs
-- [Data Visualization Cheasheet](https://www.ml4devs.com/en/articles/data-visualization-chart-cheatsheets/) - help choosing the right charts
+- [Data Visualization Cheasheet](https://www.ml4devs.com/en/articles/data-visualization-chart-cheatsheets/) - cheatsheet for choosing the right charts
 - [Python Graph Gallery](https://python-graph-gallery.com/) - gallery of python plot implementation
