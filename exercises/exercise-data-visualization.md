@@ -72,7 +72,7 @@ Create a Pie chart showing the composition of video count in each categories. Th
 
 ## 2. Likes vs. Views Comparison
 
-Create a scatter plot to show the relationship between the number of likes and views. Each dot represents a video. What kind of trend or correlation can you observe?
+Create a scatter plot to show the relationship between the number of likes and views. Each dot represents a video.
 
 ## 3. Average Views per Category
 
