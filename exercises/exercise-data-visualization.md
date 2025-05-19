@@ -84,7 +84,7 @@ Create a line chart showing how many trending videos were published each year. U
 
 ## Bonus
 
-Create a heatmap that compares likes and dislikes by category using color intensity.
+Create a heatmap that compares average likes and dislikes in each category using color intensity.
 
 **Notes**
 
