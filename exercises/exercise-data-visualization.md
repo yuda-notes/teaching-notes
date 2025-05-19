@@ -66,9 +66,9 @@ Sample Preview:
 </table>
 </div>
 
-## 1. Category Distribution
+## 1. Category Composition
 
-Create a bar chart showing the number of videos in each category. This helps understand which category appears most frequently in trending content.
+Create a Pie chart showing the composition of video count in each categories. This helps understand which category appears most dominant in trending content.
 
 ## 2. Likes vs. Views Comparison
 
