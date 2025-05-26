@@ -4,7 +4,7 @@
 - [Terminal/CMD](#terminalcmd)
 - [VSCode](#vscode)
 - [Git](#git)
-- [GitHub](#github)
+- [GitHub](#github-classroom)
 - [Videos to Watch](#videos-to-watch)
 
 ## Terminal/CMD
