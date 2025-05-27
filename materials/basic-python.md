@@ -1,15 +1,16 @@
 # Basic Python
 
 ## Syntax ([reference](https://www.geeksforgeeks.org/python-comments/))
-- Everything that we write inside our code editor can be execute, except for "Comments"
+- Everything that we write in code editor can be executed, except "Comments"
 - **Comments** in Python are the lines in the code that are ignored by the interpreter during the execution of the program.
 - Comments enhance the readability of the code, it can be used to identify and explain functionality of the code.
 
   ```py
-  # ini komentar
+  # this is single-line comment
   
   '''
-  ini juga komentar
+  this is
+  multi-line comment
   '''
   ```
 
