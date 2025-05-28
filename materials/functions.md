@@ -2,7 +2,8 @@
 
 ## Definition ([reference](https://www.geeksforgeeks.org/python-functions/))
 
-- Function is a set of instruction that does specific job
+- **Function** in Python is a **set of code** that does specific job.
+- Function can receive **input**, and produce **output**.
 - Benefits of Using Functions
   - **Readability**
   - **Reusability**
