@@ -57,8 +57,9 @@ else:
 - Just like conditionals, loop can also be nested with each other.
 
 ### `while` Loop
-![image](https://github.com/user-attachments/assets/b74c4c5d-78a2-4c9e-9368-1bcad616a43e)
 - It is used to execute a block of statements repeatedly until a given condition is satisfied.
+![image](https://github.com/user-attachments/assets/b74c4c5d-78a2-4c9e-9368-1bcad616a43e)
+
 ```py
 count = 0
 while (count < 3):        # this is the condition
@@ -67,8 +68,8 @@ while (count < 3):        # this is the condition
 ```
 
 #### Infinite Loop
-<img src="https://github.com/user-attachments/assets/4f54f8ff-a588-401e-90a3-538c23130adb" width="500"> <br>
 - While loop can be used to create an infinite loop which is a loop that never ends. This is because the condition is always be True.
+<img src="https://github.com/user-attachments/assets/4f54f8ff-a588-401e-90a3-538c23130adb" width="500"> <br>
 ```py
 count = 0
 while (count < 3):        # this is the condition
@@ -76,9 +77,9 @@ while (count < 3):        # this is the condition
 ```
 
 ### `for` Loop
-![image](https://github.com/user-attachments/assets/01f11d21-565e-4917-90e4-4d6e97598e74)
 - It is used for traversing a collection data type, like **List**, **Tuple**, **Range**, **Dictionary**, **Set** and also **String**.
 - Traversal is the process of visiting or processing each node.
+![image](https://github.com/user-attachments/assets/01f11d21-565e-4917-90e4-4d6e97598e74)
 ```py
 for x in [1,2,3,4,5]:
     print(x)
