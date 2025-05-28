@@ -112,7 +112,7 @@ else:
     -  List (`list`)
     -  Dictionary (`dictionary`)
     -  Set (`set`)
-    -  Generator (`range`)
+    -  Generator (`range()`)
 -  In comprehensions we can add conditional `if` to filter specific item from the existing collection
 ```py
 # Example of list comprehensions without condition
