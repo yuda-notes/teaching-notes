@@ -33,6 +33,6 @@
             print("it's odd date")
       ```
     - menu `3` or `exit`: the app will stop
-- If user choose a menu, either `1`, `2, `3`, or `exit`, the app will process it based on the selection.
+- If user chooses a menu, either `1`, `2`, `3`, or `exit`, the app will process it based on the selection.
 - Otherwise, the app will display an error that says "menu is not valid, try again!".
 - This app will keep running until the user choose `3` or `exit.
