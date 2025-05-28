@@ -1,11 +1,11 @@
 # Loop
 
 ## Menu App
-- Buatlah program yang akan menerima inputan dari user (hint: gunakan `input()`)
-- Program ini akan melakukan beberapa proses sesuai dengan menu yang dipilih
-    - menu `1`: membuat deret fibonacci
+- Create an app that can receive an input from the user (hint: you can use `input()` function)
+- This app will do some process based on the selected menu.
+    - menu `1`: create a fibonacci sequence
+      > use this code to complete the process for menu `1`
       ```py
-        # gunakan code berikut untuk melengkapi proses di menu 1
         n = 10
         num1 = 0
         num2 = 1
@@ -22,18 +22,17 @@
         
         print(result)
       ```
-    - menu `2`: menentukan tanggal ganjil/genap
+    - menu `2`: determine even/odd date
+      > use this code to complete the process for menu `2`
       ```py
-        # gunakan code berikut untuk melengkapi proses di menu 2
-        currentDate = 1 # ganti dengan tanggal hari ini
+        currentDate = 1 # you can change the value to today's date
         
         if currentDate % 2 == 0:
-            print("tanggal genap")
+            print("it's even date")
         else:
-            print("tanggal ganjil")
+            print("it's odd date")
       ```
-    - menu `3` atau `exit`: program berhenti
-- Jika user memilih salah satu menu, maka program akan mengarahkan ke proses sesuai dengan menu yang dipilih.
-- Namun jika user memilih **selain** menu diatas, maka program akan menampilkan pesan error seperti "menu tidak dikenal!".
-
-**Note**: Program ini akan terus berjalan sampai user memilih menu `3` atau `exit`
+    - menu `3` or `exit`: the app will stop
+- If user choose a menu, either `1`, `2, `3`, or `exit`, the app will process it based on the selection.
+- Otherwise, the app will display an error that says "menu is not valid, try again!".
+- This app will keep running until the user choose `3` or `exit.
