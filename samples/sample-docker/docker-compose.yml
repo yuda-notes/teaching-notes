@@ -1,0 +1,21 @@
+# define container yang akan dijalankan
+services:
+  api:
+    # define image/dockerfile yang akan dijalankan
+    build: .
+    # define port
+    ports:
+      - 8000:80
+    env_file:
+      - .env
+
+  postgres:
+    image: postgres:13-alpine3.20
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    volumes:
+      - ./data:/var/lib/postgresql/data
