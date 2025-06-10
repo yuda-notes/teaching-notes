@@ -39,7 +39,7 @@ def getProfiles():
 @app.get('/profiles/{id}')
 def getProfile(id: int):
     '''
-    endpoint 2 - get profile by id
+    endpoint 3 - get profile by id
     '''
 
     # complete this endpoint
@@ -49,7 +49,7 @@ def getProfile(id: int):
 @app.delete('/profiles/{id}')
 def deleteProfile(id: int):
     '''
-    endpoint 3 - delete profile by id
+    endpoint 4 - delete profile by id
     '''
 
     # complete this endpoint
@@ -59,7 +59,7 @@ def deleteProfile(id: int):
 @app.put('/profiles/{id}')
 def updateProfile(id: int, profile: Profile):
     '''
-    endpoint 4 - update profile by id
+    endpoint 5 - update profile by id
     '''
 
     # complete this endpoint
@@ -69,7 +69,7 @@ def updateProfile(id: int, profile: Profile):
 @app.post('/profiles/')
 def createProfile(profile: Profile):
     '''
-    endpoint 5 - create new profile
+    endpoint 6 - create new profile
     '''
 
     # complete this endpoint
