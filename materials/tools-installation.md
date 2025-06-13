@@ -5,7 +5,7 @@
 - [VSCode](#vscode)
 - [Git](#git)
 - [Tableau](#tableau)
-- [PostgreSQL](#postgresql)
+- [PostgreSQL](#postgresql--pgadmin)
 - [Docker](#docker)
 
 ## Anaconda
