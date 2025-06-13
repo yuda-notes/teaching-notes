@@ -8,22 +8,69 @@
 - [Videos to Watch](#videos-to-watch)
 
 ## Terminal/CMD
-### Shell Commands
-- For Windows, [click here](https://www.ninjaone.com/blog/windows-cmd-commands/)
-- For Mac/Linux, [click here](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/) or [here](https://www.digitalocean.com/community/tutorials/linux-commands#top-50-linux-commands-you-must-know-as-a-regular-user)
+> Terminal == Command Prompt, just different OS 😁
+### Some Popular Commands
+- For changing directory
+  - **Windows**
+    ```
+    cd [directory_name]
+    ```
+    or
+    
+    ```
+    cd [C:\path\to\directory_name]
+    ```
+
+    > to go back to previous directory
+    > ```
+    > cd ..
+    > ```
+  - **MacOS**
+    ```
+    cd [directory_name]
+    ```
+    or
+    
+    ```
+    cd [/path/to/directory_name]
+    ```
+
+    > to go back to previous directory
+    > ```
+    > cd ..
+    > ```
+- For creating directory (Windows and MacOS)
+  ```
+  mkdir [directory_name]
+  ```
+- For displaying directory contents
+  - **Windows**
+    ```
+    dir
+    ```
+  - **MacOS**
+    ```
+    ls
+    ```
+- Other commands
+   - [Reference for Windows](https://www.ninjaone.com/blog/windows-cmd-commands/)
+   - [Reference for Mac](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/)
 
 ### Keyboard Shortcuts
 - For Windows, learn more about some useful shortcuts [here](https://www.howtogeek.com/254401/34-useful-keyboard-shortcuts-for-the-windows-command-prompt/)
-- For Mac/Linux, learn more [here](https://www.idownloadblog.com/2020/03/10/mac-keyboard-shortcuts-terminal/) or [here](https://itsfoss.com/linux-terminal-shortcuts/)
+- For Mac, learn more [here](https://www.idownloadblog.com/2020/03/10/mac-keyboard-shortcuts-terminal/)
 
 ## VSCode
 ### Select Default Profile (**Windows only**) ([reference](https://www.shanebart.com/set-default-vscode-terminal/))
-1. Press `CTRL + SHIFT + P` to open the Command Palette
-2. Search for `Terminal: Select Default Profile`
-   ![image](https://github.com/user-attachments/assets/f94c4b98-5f78-4dd8-9f61-e3643ef50051)
-3. Select `Command Prompt` <br>
-   ![image](https://github.com/user-attachments/assets/570e01e8-76c3-40ad-b5ce-12e458aa210c)
-4. Close and reopen the VSCode.
+1. Open VSCode
+2. Press `CTRL + SHIFT + P` on your keyboard to open the **Command Palette**.
+3. Search for `Terminal: Select Default Profile`
+
+   <img width="1423" alt="image" src="https://github.com/user-attachments/assets/f94c4b98-5f78-4dd8-9f61-e3643ef50051" /><br/>
+4. Select **Command Prompt**
+
+   <img width="1423" alt="image" src="https://github.com/user-attachments/assets/570e01e8-76c3-40ad-b5ce-12e458aa210c" /><br />
+5. Close and re-open VSCode.
 
 ### Python Files
 - There are 2 file extensions that can be used to run python
