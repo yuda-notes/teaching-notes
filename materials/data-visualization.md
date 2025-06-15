@@ -20,7 +20,7 @@
 ## How to Pick the Right Chart
 ![image](https://github.com/user-attachments/assets/cf2e7ebe-33d6-4809-b541-468750a4ce2e)
 
-Sample notebook - [here](https://github.com/yuda-notes/teaching-notes/blob/main/samples/sample-visualizations.ipynb)
+Sample notebook - [here](https://colab.research.google.com/github/yuda-notes/teaching-notes/blob/main/samples/sample-visualizations.ipynb)
 
 ## References
 - [Data Viz Catalogue](https://datavizcatalogue.com/) - find chart inspiration based on needs
