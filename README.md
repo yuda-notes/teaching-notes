@@ -6,7 +6,7 @@
     1. Download `h8_env.yml` file from [here](https://drive.google.com/file/d/1XP9QUaqexuDEb8sd3VdpzqMkAx0FmsRH/view?usp=drive_link) or [here](https://gist.github.com/yudantoanas/e439226b0064097b07178afa9772078e)
     2. Execute the following command on Terminal/Command Prompt
         ```shell
-        conda env create -f /path/to/h8_env.yml
+        conda env create -f [/path/to/h8_env.yml]
         ```
           - Example, files in `C:\Documents\h8_env.yml` (Windows) or `/Users/yudanto/h8_env.yml` (MacOS)
             ```shell
