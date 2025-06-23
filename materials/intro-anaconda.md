@@ -8,7 +8,7 @@
   ![image](https://github.com/user-attachments/assets/17222b6b-68d2-4a8a-a940-cbbcc11bf8ad)
 
 ## Setup
-- Please refer to this tutorial here
+- Please refer to this tutorial [here](https://gist.github.com/yudantoanas/f50b15eb71290964b9abfbf2573a7bab#anaconda)
 
 ## Managing Package Installation
 - **Install** package
