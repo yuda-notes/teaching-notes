@@ -8,20 +8,7 @@
   ![image](https://github.com/user-attachments/assets/17222b6b-68d2-4a8a-a940-cbbcc11bf8ad)
 
 ## Setup
-1. Download and install Anaconda/Miniconda from [here](https://www.anaconda.com/download/success).
-2. After successfull install, you can access **Conda** CLI within the Terminal or CMD.
-    - For Windows, if encountered `conda not recognized` error when accessing conda in CMD, you can refer to this [tutorial](https://www.youtube.com/watch?v=xc9gXZLZ5m0)
-3. Verify conda and python with these commands
-  ```shell
-  # activate conda environment
-  conda activate base
-
-  # verify conda version
-  conda --version
-
-  # verify python version
-  python --version
-  ```
+- Please refer to this tutorial here
 
 ## Managing Package Installation
 - **Install** package
