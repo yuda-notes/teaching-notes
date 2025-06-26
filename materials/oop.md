@@ -28,7 +28,7 @@
       '''
 
       # defining attributes while assigning values
-      self.student_name = name    
+      self.student_name = name
       self.student_address = address
 
     # to define behaviour/method, we must define a function inside the class
@@ -39,12 +39,13 @@
   > Notice that in each attribute and method, there is a `self` keyword, this is used as a reference to the class itself.
   > So `self.student_name` means that the `student_name` attribute belongs to `Student` class.
   > and `sayHello(self)` means that the `sayHello()` method belongs to `Student` class and the first parameter of this method is always ignored.
+
 - Now, to create an Object we just call the Class name like below.
 
   ```py
   # calling a class / create an object
   Student(
-    student_name="Michael", 
+    student_name="Michael",
     student_address="Los Angeles"
   )
   ```
@@ -54,7 +55,7 @@
   ```py
   print(
     Student(
-      student_name="Michael", 
+      student_name="Michael",
       student_address="Los Angeles"
     )
   )
@@ -67,7 +68,7 @@
   class Student:
     ...
 
-    # Adding __str__() function 
+    # Adding __str__() function
     def __str__(self);
       '''
       This function will represent an Object with a custom String.
@@ -77,7 +78,7 @@
   # print the object again
   print(
     Student(
-      student_name="Michael", 
+      student_name="Michael",
       student_address="Los Angeles"
     )
   )
@@ -90,14 +91,14 @@
 ```py
 # create an object and save it to a variable
 stu = Student(
-      student_name="Michael", 
+      student_name="Michael",
       student_address="Los Angeles"
     )
 
 print(stu.student_name) # output: Michael
 print(stu.student_address) # output: Los Angeles
 
-stu.sayHello() # output: Hi, my name is Michael 
+stu.sayHello() # output: Hi, my name is Michael
 ```
 
 ## OOP Characteristics
@@ -111,10 +112,11 @@ stu.sayHello() # output: Hi, my name is Michael
 
 - It's a process of encapsulate attribute/methods into single unit called Class.
 - In encapsulation, attributes/methods can be divided into 3 categories
+
   - Public -> can be accessed everywhere.
-  - Protected* -> can only be accessed within the Class itself and its child, has prefix `_`.
-  - Private* -> can only be accessed within the Class itself, has prefix `__`.
-  > \*However, python does not support Protected and Private attributes. But by convention, it is followed by most python developers.
+  - Protected\* -> can only be accessed within the Class itself and its child, has prefix `_`.
+  - Private\* -> can only be accessed within the Class itself, has prefix `__`.
+    > \*However, python does not support Protected and Private attributes. But by convention, it is followed by most python developers.
 
   > **Note**: All members in a Python class are public by default.
 
@@ -128,7 +130,7 @@ class Foo:
 
         # example of private attributes
         self.__private = "private value"
-    
+
     # example of private methods
     def __fun(self):
         print("Private method", self.__private)
@@ -143,12 +145,12 @@ class Foo:
 # parent class
 class Foo:
   '''
-  Foo class is a parent class, this means that all attributes and methods 
+  Foo class is a parent class, this means that all attributes and methods
   from this class will be inherited to its child.
   '''
   def __init__(self):
     self.name = "John Doe"
-  
+
   def hello(self):
     print("hello world")
 
@@ -181,6 +183,29 @@ barObj.hello() # output: hello world
 - Overloading is the ability of a class to create same method multiple times, but with different parameter(s).
 
   > **Note**: Python can only do overriding in Polymorphism.
+
+```py
+# parent class
+class Car:
+  def makeNoise(self):
+    return "vroom vroom"
+
+# child class without polymorphism - overriding
+class RegularCar(Car):
+  pass
+
+# child class with polymorphism - overriding
+class ElectricCar(Car):
+  def makeNoise(self):
+    return "bzzz bzzz"
+
+# when we call `makeNoise()` function in each class
+regular = RegularCar()
+print(regular.makeNoise()) # output: vroom vroom
+
+electric = ElectricCar():
+print(electric.makeNoise()) # output: bzzz bzzz
+```
 
 ## Reference
 
