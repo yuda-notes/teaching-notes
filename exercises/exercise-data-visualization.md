@@ -5,7 +5,7 @@
 ## Instruction
 
 - Create visualizations based on this dataset.
-- Dataset link: https://github.com/yuda-notes/teaching-notes/raw/refs/heads/main/dataset/cleaned-youtube-videos.csv
+- Dataset link: https://raw.githubusercontent.com/yuda-notes/teaching-notes/refs/heads/main/dataset/cleaned-youtube-videos.csv
 
 Sample Preview:
 
