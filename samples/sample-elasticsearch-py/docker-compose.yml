@@ -1,7 +1,7 @@
 version: "3.3"
 services:
-  elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.13.0-arm64
+  elasticsearch:   
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.13.0-arm64 # for intel chipset use 7.13.0
     container_name: elasticsearch
     restart: always
     environment:
@@ -22,7 +22,7 @@ services:
       - 9200:9200
   kibana:
     container_name: kibana
-    image: docker.elastic.co/kibana/kibana:7.13.0-arm64
+    image: docker.elastic.co/kibana/kibana:7.13.0-arm64 # for intel chipset use 7.13.0
     restart: always
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200    # address of elasticsearch docker container which kibana will connect
