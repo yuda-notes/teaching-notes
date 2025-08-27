@@ -22,21 +22,6 @@ CREATE TABLE IF NOT EXISTS bikeshare_trips
 )
 ```
 - Import CSV data into table
-```sql
-CREATE TABLE IF NOT EXISTS bikeshare_trips
-(
-    trip_id varchar,
-    subscriber_type varchar,
-    bike_id varchar,
-    bike_type varchar,
-    start_time timestamp,
-    start_station_id varchar,
-    start_station_name varchar,
-    end_station_id varchar,
-    end_station_name varchar,
-    duration_minutes integer
-)
-```
 
 ### Problem
 1. Buat query untuk mengambil hanya tiga huruf pertama dari `subscriber_type` dan menggabungkannya dengan `bike_type`. Hasilnya diberi alias `short_info`.
