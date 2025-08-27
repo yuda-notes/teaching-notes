@@ -22,6 +22,8 @@ CREATE TABLE IF NOT EXISTS bikeshare_trips
 )
 ```
 - Import CSV data into table
+  - Download this file first: https://github.com/yuda-notes/teaching-notes/blob/main/dataset/bikeshare_trips.csv
+  - Import CSV using pgAdmin
 
 ### Problem
 1. Buat query untuk mengambil hanya tiga huruf pertama dari `subscriber_type` dan menggabungkannya dengan `bike_type`. Hasilnya diberi alias `short_info`.
