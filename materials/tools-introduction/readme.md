@@ -119,7 +119,7 @@
 ### Environment
 
 - To give a visual understanding, please see the illustration below
-  ![i](environment-illustration.jpg)
+  ![alt](assets/environment-illustration.jpg)
 
 - Environment is an "isolated space" that separates specific activities from conflicting with each other.
 - Let's say this **House Map** is a global space which have several rooms inside. Each rooms has a specific name written on it.
