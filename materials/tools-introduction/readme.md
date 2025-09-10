@@ -203,22 +203,22 @@
 - Essentials features:
   - Open project folder
     - Choose `Open Folder` > Select your desired folder > then `Open`
-      ![alt](vscode1.png)
+      ![alt](assets/vscode1.png)
   - Integrated Terminal
     - Choose `Terminal` > `New Terminal`
-      ![alt text](vscode2.png)
-      ![alt text](vscode3.png)
+      ![alt text](assets/vscode2.png)
+      ![alt text](assets/vscode3.png)
     - **FOR WINDOWS USER**, please setup your default profile into `CMD` (Command Prompt) first before continuing.
       1. Click the top **Search Bar**, then type and select `> Terminal: Select Default Profile`
-         ![alt text](vscode4.png)
+         ![alt text](assets/vscode4.png)
       2. Choose `CMD` or `Command Prompt`
-         ![alt text](vscode5.png)
+         ![alt text](assets/vscode5.png)
 
 ### VSCode Exercise
 
 1. Open new project folder and create a new file called `my_app.py`
 
-   ![alt](vscode6.png)
+   ![alt](assets/vscode6.png)
 
 2. Create 2 more files called `my_notes.ipynb` and `my_markdown.md`
 3. In `my_app.py` write down the below code
@@ -251,7 +251,7 @@
       ```
 
    2. Press the ✅ button on your `Markdown/Text` cell to see the **Preview**
-      ![alt text](vscode7.png)
+      ![alt text](assets/vscode7.png)
 
    3. Now, in your `Code` cell, write down the following code
 
@@ -262,10 +262,10 @@
    4. Press the `Run` button on your `Code` cell to see the **Output**
 
       > Please make sure to set your language mode to `Python` first!
-      > ![alt text](vscode8.png)
+      > ![alt text](assets/vscode8.png)
 
    5. When prompted **Select Kernel**, choose `Python Environment` > select `my_env` environment`.
-      ![alt text](vscode9.png)
+      ![alt text](assets/vscode9.png)
    6. Now your should see the **output** from the `Code` cell. You can save the file as well.
       > If you have any questions/errors, please ask the instructor for help
 
@@ -310,7 +310,7 @@ Please execute down the following commands
 
 1. Create new repository on <https://github.com>
 2. Copy your repository URL here
-   ![alt text](git1.png)
+   ![alt text](assets/git1.png)
 3. Open **Terminal**
    > (_OPTIONAL_) Perform `cd` to your desired location
 4. Execute the command below
