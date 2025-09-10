@@ -1,0 +1,53 @@
+# Data Wrangling
+
+## Exercise
+
+### Setup
+- Create table
+    ```sql
+    DROP TABLE IF EXISTS bikeshare_trips;
+    
+    CREATE TABLE IF NOT EXISTS bikeshare_trips
+    (
+        trip_id varchar,
+        subscriber_type varchar,
+        bike_id varchar,
+        bike_type varchar,
+        start_time timestamp,
+        start_station_id varchar,
+        start_station_name varchar,
+        end_station_id varchar,
+        end_station_name varchar,
+        duration_minutes integer
+    )
+    ```
+- Import CSV data into table
+  - Download this file first: https://raw.githubusercontent.com/yuda-notes/teaching-notes/refs/heads/main/dataset/bikeshare_trips.csv
+  - Import CSV using pgAdmin
+
+### Problem
+1. Buat query untuk mengambil hanya tiga karakter pertama dari `subscriber_type` dan menggabungkannya dengan `bike_type`. Hasilnya diberi alias `short_info`.
+    - Contoh output:
+
+      <img width="148" alt="image" src="https://github.com/user-attachments/assets/b67e1edc-687d-4893-9872-52a915987c22" />
+
+2. Tampilkan jumlah perjalanan yang terjadi per bulan. Gunakan fungsi `EXTRACT` untuk mengambil bulan dari `start_time`.
+    - Contoh output:
+    
+      <img width="272" alt="image" src="https://github.com/user-attachments/assets/272f7428-1082-465d-9847-df27e287d878" />
+
+3. Tampilkan semua perjalanan yang memiliki durasi perjalanan melebihi rata-rata durasi perjalanan `subscriber_type` 'Local31'. Urutkan hasil tersebut berdasarkan duration terlama s/d tercepat. Gunakan subquery untuk menghitung rata-rata durasi.
+    - Contoh output:
+
+      <img width="1333" alt="image" src="https://github.com/user-attachments/assets/4ec81e3f-3d96-46bc-bb38-52ef069b3059" />
+
+
+4. Buat query yang mengkategorikan perjalanan berdasarkan durasi:
+    - Jika `duration_minutes` kurang dari 5 menit, diberi label 'Short'
+    - Jika `duration_minutes` antara 5 dan 30 menit, diberi label 'Medium'
+    - Jika lebih dari 30 menit, diberi label 'Long'
+    - Hasilnya diberi alias `trip_category`.
+    - Contoh output:
+
+      <img width="407" alt="image" src="https://github.com/user-attachments/assets/cf4c3e51-d776-4343-b4f5-f5d4e7d19dc8" />
+
