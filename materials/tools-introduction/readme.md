@@ -22,17 +22,13 @@
 
   - Display folder contents
 
-    - Mac/Linux
+    ```bash
+    # for Windows
+    dir
 
-      ```bash
-      ls
-      ```
-
-    - Windows
-
-      ```bash
-      dir
-      ```
+    # for Mac/Linux
+    ls
+    ```
 
   - Change folder location
 
@@ -42,44 +38,43 @@
     # or
     cd path/to/folder_name
 
-    # return to parent folder
+    # go back to parent folder
     cd ..
     ```
 
     - Mac/Linux
 
-      > **lokasi folder**: `/User/Documents/ProjectA`
-
       ```text
       User
-      └── Documents
+      └── Documents <-- current location
           └── ProjectA
+          └── ProjectB
+          └── ProjectC
       ```
-
       ```bash
-      # Jika lokasi cursor berada di dalam /User/Documents
+      # if user wants to go to `ProjectA`
       cd ProjectA
 
-      # Jika lokasi cursor berada di luar
+      # or
       cd /User/Documents/ProjectA
       ```
 
     - Windows
 
-      > **lokasi folder**: `C:\Users\Documents\ProjectA`
-
       ```text
       C:
       └── User
-          └── Documents
+          └── Documents <-- current location
               └── ProjectA
+              └── ProjectB
+              └── ProjectC
       ```
 
       ```bash
-      # Jika lokasi cursor berada di dalam /User/Documents
+      # if user wants to go to `ProjectA`
       cd ProjectA
 
-      # Jika lokasi cursor berada di luar
+      # or
       cd C:\Users\Documents\ProjectA
       ```
 
@@ -91,6 +86,12 @@
     # or
     mkdir path/to/folder_name
     ```
+
+    Tips folder name:
+    1. For name consists of 2 or more words, avoid using spaces. Use underscore (`_`) instead.
+        > if you want to have spaces, use double-quotes (`"`)
+    2. Use contextual names
+        > don't use random names that are meaningless, e.g. `abc_123`
 
 ### Terminal Exercise
 
@@ -181,22 +182,16 @@
 
 ### Mandatory Conda Setup
 
-- Please download the required file in this [link here](my_env.yml)
+- Please download the `p0_env_requirements.txt` file [here](https://drive.google.com/file/d/1cO9F_k8y3jVIEJopTdoBZA7vBSGlNHyP/view?usp=drive_link)
 - Open up your **Terminal** and write down the following command
-
+  > Before execute, **PLEASE CHECK** your current location first and **MAKE SURE** you can see `(base)` in your Terminal
+  
+  > If the file is **NOT** in the same location as your current location, then you **MUST** change the location first before executing this command.
   ```bash
-  # before execute, PLEASE CHECK your cursor location first.
-  # If the file is not in the same location as your cursor, then you MUST change location first before continuing to execute below command.
-  conda env create -f file_name.yml
+  pip install -r p0_env_requirements.txt
   ```
 
-  > If encounter any errors, please ask the instructor for help.
-
-- After finished, activate the new environment with this command
-
-  ```bash
-  conda activate environment_name
-  ```
+  > If encounter any **errors**, please ask the instructor for help.
 
 ## VSCode
 
@@ -306,23 +301,27 @@ Please execute down the following commands
    git config --global user.email "your_github_email"
    ```
 
-### Git Exercise
+### Git Exercise (using GitHub Classroom)
 
-1. Create new repository on <https://github.com>
-2. Copy your repository URL here
+1. Click on this [link](https://classroom.github.com/a/xHeLRsRk), and press `Accept this assignment` button.
+![alt text](assets/git2.png)
+2. Click on the GitHub repository link in this page.
+    > if you can't see the link, please **REFRESH** the page
+   ![alt text](assets/git3.png)
+3. Click on the `Code` button and copy the repository URL.
    ![alt text](assets/git1.png)
-3. Open **Terminal**
-   > (_OPTIONAL_) Perform `cd` to your desired location
-4. Execute the command below
+4. Clone the repository on your local folder.
 
    ```bash
    git clone your_repository_url
    ```
 
    > This command will create a **new folder** inside your specific location
+   
    > If encounter any errors, please ask the instructor for help
 
-5. Now, open up your cloned folder from `Step 4` in VSCode
+5. Now open up your cloned folder from **Step 4** in VSCode. You can add/modify/delete the files as you wish.
+    > don't forget to save all files (<kbd>CTRL</kbd> + <kbd>S</kbd> or <kbd>Command</kbd> + <kbd>S</kbd>) 
 6. Next, open the **Integrated Terminal** in VSCode and write down the following commands:
 
    1. Git add
