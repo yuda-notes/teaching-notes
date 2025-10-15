@@ -1,22 +1,20 @@
 # Computational Thinking and Logic
 
 ## Computational Thinking ([reference](https://www.bbc.co.uk/bitesize/guides/zp92mp3/revision/1))
-- **Computational Thinking** is the process of identifying a clear **step-by-step solution** to a complex problem.
-- Computational thinking allows us to take a complex problem, understand what the problem is and develop possible solutions.
-- There are 4 techniques of computational thinking
-  - Decomposition
-  - Pattern Recognition: 
-  - Abstraction
-  - Algorithms
-- Computational thinking involves taking that complex problem and breaking it down into a series of small, more manageable problems (**decomposition**). Each of these smaller problems can then be looked at individually, considering how similar problems have been solved previously (**pattern recognition**) and focusing only on the important details, while ignoring irrelevant information (**abstraction**). Next, simple steps or rules to solve each of the smaller problems can be designed (**algorithms**). <br>
+- **Computational Thinking** is the **planning** process for solving a problem.
+- There are 4 concepts of computational thinking:
+  - Decomposition - breaking down problem into **smaller** problems.
+  - Pattern Recognition - identifying **patterns** to help solving the problems.
+  - Abstraction - focusing only on the **important** part of the problem.
+  - Algorithms - create **step-by-step** instruction to solve the problem.
 ![image](https://github.com/user-attachments/assets/63b129bc-dac3-4283-91fc-d582336c4903)
 
 ## Computational Logic ([reference](https://www.theschoolrun.com/what-computational-logic))
-- **Computational Logic** is a term that describes the **decision-making** process used in programming and writing algorithms.  <br>
+- **Computational Logic** is the **decision-making** process used in programming and writing algorithms. <br>
 ![image](https://github.com/user-attachments/assets/fd5b7953-e72b-4bb6-ab8b-6e67df5705db)
 
 ### Boolean/Logic Gate ([reference](https://www.datacamp.com/tutorial/python-logical-operators-introduction))
-- In programming, we frequently need to make decisions based on condition. In the case of multiple conditions, we might want to execute a certain action only if several conditions are met simultaneously or we might want to trigger an alternative action if any one of several conditions is fulfilled. <br>
+- In the case of multiple conditions, we might want to execute a certain action only if several conditions are met simultaneously or we might want to trigger an alternative action if any one of several conditions is fulfilled. <br>
 ![image](https://github.com/user-attachments/assets/aa85be80-4c64-4faa-a166-4e0fe8de61dd)
 
 ## Flowchart
