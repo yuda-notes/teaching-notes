@@ -36,7 +36,7 @@
     
       <img width="272" alt="image" src="https://github.com/user-attachments/assets/272f7428-1082-465d-9847-df27e287d878" />
 
-3. Tampilkan semua perjalanan yang memiliki durasi perjalanan melebihi rata-rata durasi perjalanan `subscriber_type` 'Local31'. Urutkan hasil tersebut berdasarkan duration terlama s/d tercepat. Gunakan subquery untuk menghitung rata-rata durasi.
+3. Tampilkan semua perjalanan yang memiliki durasi perjalanan melebihi rata-rata durasi perjalanan subscriber_type **Local31**. Urutkan hasil tersebut berdasarkan duration terlama s/d tercepat. Gunakan subquery untuk menghitung rata-rata durasi.
     - Contoh output:
 
       <img width="1333" alt="image" src="https://github.com/user-attachments/assets/4ec81e3f-3d96-46bc-bb38-52ef069b3059" />
