@@ -26,7 +26,7 @@
   - Import CSV using pgAdmin
 
 ### Problem
-1. Buat query untuk mengambil hanya tiga karakter pertama dari `subscriber_type` dan menggabungkannya dengan `bike_type`. Hasilnya diberi alias `short_info`.
+1. Buat query untuk mengambil tiga karakter pertama dari `subscriber_type` dan menggabungkannya dengan `bike_type`. Hasilnya diberi alias `short_info`.
     - Contoh output:
 
       <img width="148" alt="image" src="https://github.com/user-attachments/assets/b67e1edc-687d-4893-9872-52a915987c22" />
